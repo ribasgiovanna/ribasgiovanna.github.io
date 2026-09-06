@@ -8,6 +8,13 @@
       link_creative: "Creative Collection",
       link_contact: "Contact",
 
+      explore_h: "Explore what I do",
+      tile_tech: "TECH",
+      tile_creative: "CREATIVE",
+      tile_community: "COMMUNITY",
+      tile_community_sub: "Social impact",
+      tile_coffee_sub: "Founder",
+
       about_h: "About",
       about_p: "Software Engineering student and software development intern. I work across software, data and design: building production features and ETL pipelines, replacing manual and error-prone processes with automation, and developing web and interactive applications, supported by a background in visual design and digital identity.",
 
@@ -60,6 +67,9 @@
       more_4: "&hellip;and other academic projects",
 
       contact_h: "Contact",
+      contact_email: "Email:",
+      contact_email_edu: "Academic email:",
+      contact_drive: "Creative Collection folders",
       footer_built: "built with HTML, CSS and JavaScript, hosted on GitHub Pages"
     },
 
@@ -68,6 +78,13 @@
       tagline: "Hub pessoal e portf&oacute;lio central &mdash; onde engenharia de software encontra design, criatividade, pessoas e impacto social.",
       link_creative: "Cole&ccedil;&atilde;o Criativa",
       link_contact: "Contato",
+
+      explore_h: "Explore o que eu fa&ccedil;o",
+      tile_tech: "TECH",
+      tile_creative: "CRIATIVO",
+      tile_community: "COMUNIDADE",
+      tile_community_sub: "Impacto social",
+      tile_coffee_sub: "Fundadora",
 
       about_h: "Sobre",
       about_p: "Estudante de Engenharia de Software e estagi&aacute;ria de desenvolvimento. Trabalho na interse&ccedil;&atilde;o entre software, dados e design: construindo funcionalidades em produ&ccedil;&atilde;o e pipelines de ETL, substituindo processos manuais e sujeitos a erro por automa&ccedil;&atilde;o, e desenvolvendo aplica&ccedil;&otilde;es web e interativas &mdash; com base tamb&eacute;m em design visual e identidade digital.",
@@ -121,6 +138,9 @@
       more_4: "&hellip;e outros projetos acad&ecirc;micos",
 
       contact_h: "Contato",
+      contact_email: "E-mail:",
+      contact_email_edu: "E-mail institucional:",
+      contact_drive: "Pastas da Cole&ccedil;&atilde;o Criativa",
       footer_built: "feito com HTML, CSS e JavaScript, hospedado no GitHub Pages"
     }
   };

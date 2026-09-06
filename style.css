@@ -134,6 +134,53 @@ p:last-child { margin-bottom: 0; }
 }
 .links a:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
 
+/* ---------- explore / hub grid ---------- */
+#explore .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  align-items: start;
+}
+.tile {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 14px 16px;
+  border: 1px solid var(--tile-line, #3a3a3a);
+  border-radius: 10px;
+  background: var(--tile-bg, #1e1e1e);
+  color: var(--tile-text, #ededed);
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  text-decoration: none;
+  transition: border-color .15s ease, transform .15s ease;
+}
+.tile:hover {
+  text-decoration: none;
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+.tile .glyph {
+  font-size: 18px;
+  color: var(--accent);
+  line-height: 1;
+}
+.tile-title {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: .08em;
+}
+.tile-sub {
+  font-size: 12.5px;
+  opacity: .6;
+}
+:root { --tile-bg: #1e1a17; --tile-line: #3a332d; --tile-text: #f1ece7; }
+@media (prefers-color-scheme: dark) {
+  :root { --tile-bg: #211c17; --tile-line: #3a332b; --tile-text: #f1ece7; }
+}
+@media (max-width: 560px) {
+  #explore .grid { grid-template-columns: 1fr; }
+}
+
 /* ---------- project cards ---------- */
 .card {
   background: var(--surface);
