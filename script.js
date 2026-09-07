@@ -12,7 +12,7 @@
 
       hi: "Hi, my name is",
       say: "she builds things — with code, design &amp; people",
-      roles_kicker: "&gt; CURRENT ROLES &gt;&gt;",
+      roles_kicker: "&gt; WHAT I DO &gt;&gt;",
       bio: "Giovanna Ribas is a software engineering student and developer from Curitiba, Brazil. She works across software, data and design — building production features and automations, and visual work and community projects the rest of the time. She founded and leads Coffee &amp; Code, a student tech club at PUCPR.",
 
       id_name: "NAME", id_based: "BASED IN", id_exp: "EXPERIENCE", id_exp_v: "Software Development Intern",
@@ -21,9 +21,15 @@
       id_builds_v: "software · interfaces · systems · communities · visual identities",
 
       role_1: "Software Engineering Student",
-      role_2: "Software Development Intern", role_2_tag: "in production",
-      role_3: "Visual &amp; Creative Designer", role_3_tag: "identity · illustration · image",
-      role_4_sub: "founder &amp; lead",
+      role_2: "Software Development Intern",
+      role_3: "Visual &amp; Creative Designer",
+      role_4: "Coffee &amp; Code — Founder",
+      role_5: "Data &amp; automation",
+      role_6: "Building with people",
+
+      datasus_lead: "Reading a slow public-health database with a robot instead of by hand.",
+      corrida_lead: "A tiny game about being late for class — built to learn state machines and game loops.",
+      pibble_lead: "Building the employees side of a Django delivery system, with two teammates.",
 
       work_h: "Selected work",
       work_intro: "Software, data, a game, a community. Different languages for the same habit — making things.",
@@ -93,6 +99,7 @@
       contact_h: "Contact",
       contact_line: "Open to build things with good people.",
 
+      foot_say: "Let's build something.",
       foot_note: "Built by hand with HTML, CSS &amp; JavaScript. No framework.",
       modal_todo: "Full image and a short note about this piece are being added."
     },
@@ -103,7 +110,7 @@
 
       hi: "Oi, meu nome &eacute;",
       say: "ela constr&oacute;i coisas — com c&oacute;digo, design &amp; pessoas",
-      roles_kicker: "&gt; FUN&Ccedil;&Otilde;ES ATUAIS &gt;&gt;",
+      roles_kicker: "&gt; O QUE EU FA&Ccedil;O &gt;&gt;",
       bio: "Giovanna Ribas &eacute; estudante de Engenharia de Software e desenvolvedora, de Curitiba. Trabalha entre software, dados e design — construindo funcionalidades em produ&ccedil;&atilde;o e automa&ccedil;&otilde;es, e trabalho visual e projetos de comunidade no resto do tempo. Criou e lidera o Coffee &amp; Code, um clube universit&aacute;rio de tecnologia na PUCPR.",
 
       id_name: "NOME", id_based: "ONDE", id_exp: "EXPERI&Ecirc;NCIA", id_exp_v: "Estagi&aacute;ria de Desenvolvimento de Software",
@@ -112,9 +119,15 @@
       id_builds_v: "software · interfaces · sistemas · comunidades · identidades visuais",
 
       role_1: "Estudante de Engenharia de Software",
-      role_2: "Estagi&aacute;ria de Desenvolvimento", role_2_tag: "em produ&ccedil;&atilde;o",
-      role_3: "Designer Visual &amp; Criativa", role_3_tag: "identidade · ilustra&ccedil;&atilde;o · imagem",
-      role_4_sub: "fundadora &amp; l&iacute;der",
+      role_2: "Estagi&aacute;ria de Desenvolvimento",
+      role_3: "Designer Visual &amp; Criativa",
+      role_4: "Coffee &amp; Code — Fundadora",
+      role_5: "Dados &amp; automa&ccedil;&atilde;o",
+      role_6: "Construir com pessoas",
+
+      datasus_lead: "Ler uma base p&uacute;blica de sa&uacute;de lenta com um rob&ocirc;, em vez de na m&atilde;o.",
+      corrida_lead: "Um joguinho sobre estar atrasada para a aula — feito para aprender m&aacute;quinas de estado e game loops.",
+      pibble_lead: "Construindo o lado de Funcion&aacute;rios de um sistema de entregas em Django, com dois colegas.",
 
       work_h: "Trabalhos selecionados",
       work_intro: "Software, dados, um jogo, uma comunidade. Linguagens diferentes para o mesmo h&aacute;bito — fazer coisas.",
@@ -184,6 +197,7 @@
       contact_h: "Contato",
       contact_line: "Aberta a construir coisas com gente boa.",
 
+      foot_say: "Vamos construir algo.",
       foot_note: "Feito &agrave; m&atilde;o com HTML, CSS &amp; JavaScript. Sem framework.",
       modal_todo: "A imagem completa e uma nota curta sobre a pe&ccedil;a est&atilde;o sendo adicionadas."
     }

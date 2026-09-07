@@ -71,29 +71,20 @@
     <p class="about__hi" data-i18n="hi">Hi, my name is</p>
     <h1 id="hero-name">Giovanna Ribas<span class="dot">.</span></h1>
     <p class="about__say" data-i18n="say">she builds things — with code, design &amp; people</p>
+    <svg class="about__arrow" width="120" height="70" viewBox="0 0 120 70" fill="none" aria-hidden="true">
+      <path d="M4 12 C 40 4, 92 10, 110 44" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M110 44 L 98 34 M110 44 L 112 28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </svg>
 
-    <p class="about__roleslabel" data-i18n="roles_kicker">&gt; CURRENT ROLES &gt;&gt;</p>
-    <div class="stamps">
-      <span class="stamp stamp--rect">
-        <span class="stamp__glyph">&lt;/&gt;</span>
-        <span data-i18n="role_1">Software Engineering Student</span>
-        <small>PUCPR</small>
-      </span>
-      <span class="stamp stamp--oct">
-        <span class="stamp__glyph">&#9679;</span>
-        <span data-i18n="role_2">Software Development Intern</span>
-        <small data-i18n="role_2_tag">in production</small>
-      </span>
-      <span class="stamp stamp--pill">
-        <span class="stamp__glyph">&#10022;</span>
-        <span data-i18n="role_3">Visual &amp; Creative Designer</span>
-        <small data-i18n="role_3_tag">identity · illustration · image</small>
-      </span>
-      <span class="stamp stamp--circle">
-        <span>Coffee &amp; Code</span>
-        <small data-i18n="role_4_sub">founder &amp; lead</small>
-      </span>
-    </div>
+    <p class="about__roleslabel" data-i18n="roles_kicker">&gt; WHAT I DO &gt;&gt;</p>
+    <ul class="pills">
+      <li class="pill pill--a" data-i18n="role_1">Software Engineering Student</li>
+      <li class="pill pill--b" data-i18n="role_2">Software Development Intern</li>
+      <li class="pill pill--c" data-i18n="role_5">Data &amp; automation</li>
+      <li class="pill pill--d" data-i18n="role_3">Visual &amp; Creative Designer</li>
+      <li class="pill pill--e" data-i18n="role_4">Coffee &amp; Code — Founder</li>
+      <li class="pill pill--f" data-i18n="role_6">Building with people</li>
+    </ul>
 
     <p class="about__bio" data-i18n="bio">Giovanna Ribas is a software engineering student and developer from Curitiba, Brazil. She works across software, data and design — building production features and automations, and visual work and community projects the rest of the time. She founded and leads Coffee &amp; Code, a student tech club at PUCPR.</p>
   </div>
@@ -185,6 +176,7 @@
     </figure>
     <div class="case__text">
       <h2 id="datasus-h">DATASUS Blood Bank</h2>
+      <p class="case__lead" data-i18n="datasus_lead">Reading a slow public-health database with a robot instead of by hand.</p>
       <p class="flowline">DATASUS &rarr; Selenium &rarr; pandas &rarr; <span data-i18n="fl_processed">processed data</span> &rarr; Streamlit</p>
 
       <h3 data-i18n="lbl_context">Context</h3>
@@ -212,6 +204,7 @@
     </figure>
     <div class="case__text">
       <h2 id="corrida-h">Corrida para a Faculdade</h2>
+      <p class="case__lead" data-i18n="corrida_lead">A tiny game about being late for class — built to learn state machines and game loops.</p>
       <p data-i18n="corrida_p1">A 2D endless-runner: a student is late for class and has to dodge the city. Reach 1000 points to pass; lose three lives and it's over.</p>
       <p data-i18n="corrida_p2">Written in Python and Pygame — a clean state machine (menu / play / end), jump physics with gravity, random obstacles, difficulty that ramps with the score, lives with temporary invincibility, a HUD and a saved high score.</p>
       <p class="note" data-i18n="corrida_note">The code is my own work. The visual assets are AI-generated and shown transparently.</p>
@@ -231,6 +224,7 @@
     </figure>
     <div class="case__text">
       <h2 id="pibble-h">Pibble Express</h2>
+      <p class="case__lead" data-i18n="pibble_lead">Building the employees side of a Django delivery system, with two teammates.</p>
       <p data-i18n="pibble_p">A Django delivery-management system: authentication, ADM/FUNC access levels, CRUD for clients, products, employees and deliveries, a REST API and an integrated frontend. Built with two teammates.</p>
       <h3 data-i18n="pibble_role_h">My contribution</h3>
       <ul class="ticks">
@@ -379,8 +373,18 @@
 </main>
 
 <footer class="foot">
-  <p><span data-i18n="foot_note">Built by hand with HTML, CSS &amp; JavaScript. No framework.</span>
-     &nbsp;·&nbsp; &copy; <span id="year"></span> Giovanna Ribas</p>
+  <div class="foot__inner">
+    <p class="foot__say" data-i18n="foot_say">Let's build something.</p>
+    <ul class="foot__links">
+      <li><a href="mailto:giovannareis07@gmail.com">Email</a></li>
+      <li><a href="https://www.linkedin.com/in/giovannaribasdosreis/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      <li><a href="https://github.com/ribasgiovanna" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      <li><a href="https://www.behance.net/ribestudio" target="_blank" rel="noopener noreferrer">Behance</a></li>
+    </ul>
+    <p class="foot__wordmark" aria-hidden="true">Giovanna Ribas<span class="dot">.</span></p>
+    <p class="foot__note"><span data-i18n="foot_note">Built by hand with HTML, CSS &amp; JavaScript. No framework.</span>
+       &nbsp;·&nbsp; &copy; <span id="year"></span> Giovanna Ribas</p>
+  </div>
 </footer>
 
 <!-- artwork modal -->
