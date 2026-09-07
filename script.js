@@ -8,22 +8,21 @@
   var I18N = {
     en: {
       skip: "Skip to content",
-      nav_work: "Work", nav_coffee: "Coffee &amp; Code", nav_currently: "Currently", nav_contact: "Contact",
+      nav_about: "About", nav_work: "Work", nav_coffee: "Coffee &amp; Code", nav_currently: "Currently", nav_contact: "Contact",
 
-      hero_kicker: "Portfolio — built by hand",
-      hero_meta_build: "building across code, design &amp; people",
+      hi: "Hi, my name is",
+      say: "she builds things — with code, design &amp; people",
+      roles_kicker: "&gt; CURRENT ROLES &gt;&gt;",
+      bio: "Giovanna Ribas is a software engineering student and developer from Curitiba, Brazil. She works across software, data and design — building production features and automations, and visual work and community projects the rest of the time. She founded and leads Coffee &amp; Code, a student tech club at PUCPR.",
 
-      id_title: "CREATIVE ID",
-      id_name: "NAME", id_based: "BASED IN", id_study: "STUDY", id_work: "WORK",
-      id_work_v: "Software Development Intern",
+      id_name: "NAME", id_based: "BASED IN", id_exp: "EXPERIENCE", id_exp_v: "Software Development Intern",
+      id_edu: "EDUCATION",
       id_builds: "BUILDS",
-      id_builds_v: "software &middot; interfaces &middot; systems &middot; communities &middot; visual identities",
-      id_status: "open to build things with good people",
+      id_builds_v: "software · interfaces · systems · communities · visual identities",
 
-      roles_h: "Current roles",
-      role_1: "Software Engineering Student", role_1_sub: "PUCPR — foundations, systems, practice",
-      role_2: "Software Development Intern", role_2_sub: "production software, day to day",
-      role_3: "Visual &amp; Creative Designer", role_3_sub: "identity, illustration, image, photography",
+      role_1: "Software Engineering Student",
+      role_2: "Software Development Intern", role_2_tag: "in production",
+      role_3: "Visual &amp; Creative Designer", role_3_tag: "identity · illustration · image",
       role_4_sub: "founder &amp; lead",
 
       work_h: "Selected work",
@@ -100,22 +99,21 @@
 
     pt: {
       skip: "Pular para o conte&uacute;do",
-      nav_work: "Trabalhos", nav_coffee: "Coffee &amp; Code", nav_currently: "Atualmente", nav_contact: "Contato",
+      nav_about: "Sobre", nav_work: "Trabalhos", nav_coffee: "Coffee &amp; Code", nav_currently: "Atualmente", nav_contact: "Contato",
 
-      hero_kicker: "Portf&oacute;lio — feito &agrave; m&atilde;o",
-      hero_meta_build: "construindo entre c&oacute;digo, design &amp; pessoas",
+      hi: "Oi, meu nome &eacute;",
+      say: "ela constr&oacute;i coisas — com c&oacute;digo, design &amp; pessoas",
+      roles_kicker: "&gt; FUN&Ccedil;&Otilde;ES ATUAIS &gt;&gt;",
+      bio: "Giovanna Ribas &eacute; estudante de Engenharia de Software e desenvolvedora, de Curitiba. Trabalha entre software, dados e design — construindo funcionalidades em produ&ccedil;&atilde;o e automa&ccedil;&otilde;es, e trabalho visual e projetos de comunidade no resto do tempo. Criou e lidera o Coffee &amp; Code, um clube universit&aacute;rio de tecnologia na PUCPR.",
 
-      id_title: "CREATIVE ID",
-      id_name: "NOME", id_based: "ONDE", id_study: "ESTUDO", id_work: "TRABALHO",
-      id_work_v: "Estagi&aacute;ria de Desenvolvimento de Software",
+      id_name: "NOME", id_based: "ONDE", id_exp: "EXPERI&Ecirc;NCIA", id_exp_v: "Estagi&aacute;ria de Desenvolvimento de Software",
+      id_edu: "FORMA&Ccedil;&Atilde;O",
       id_builds: "CONSTR&Oacute;I",
-      id_builds_v: "software &middot; interfaces &middot; sistemas &middot; comunidades &middot; identidades visuais",
-      id_status: "aberta a construir coisas com gente boa",
+      id_builds_v: "software · interfaces · sistemas · comunidades · identidades visuais",
 
-      roles_h: "Fun&ccedil;&otilde;es atuais",
-      role_1: "Estudante de Engenharia de Software", role_1_sub: "PUCPR — base, sistemas, pr&aacute;tica",
-      role_2: "Estagi&aacute;ria de Desenvolvimento", role_2_sub: "software em produ&ccedil;&atilde;o, no dia a dia",
-      role_3: "Designer Visual &amp; Criativa", role_3_sub: "identidade, ilustra&ccedil;&atilde;o, imagem, fotografia",
+      role_1: "Estudante de Engenharia de Software",
+      role_2: "Estagi&aacute;ria de Desenvolvimento", role_2_tag: "em produ&ccedil;&atilde;o",
+      role_3: "Designer Visual &amp; Criativa", role_3_tag: "identidade · ilustra&ccedil;&atilde;o · imagem",
       role_4_sub: "fundadora &amp; l&iacute;der",
 
       work_h: "Trabalhos selecionados",

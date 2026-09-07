@@ -25,7 +25,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
 
@@ -53,6 +53,7 @@
 <header class="nav">
   <a class="nav__brand" href="#top">Giovanna Ribas</a>
   <nav class="nav__links" aria-label="Sections">
+    <a href="#about" data-i18n="nav_about">About</a>
     <a href="#work" data-i18n="nav_work">Work</a>
     <a href="#coffee" data-i18n="nav_coffee">Coffee &amp; Code</a>
     <a href="#currently" data-i18n="nav_currently">Currently</a>
@@ -64,65 +65,67 @@
 <main id="main">
 <span id="top"></span>
 
-<!-- ============ HERO / CREATIVE ID ============ -->
-<section class="hero" aria-labelledby="hero-name">
-  <div class="hero__type">
-    <p class="kicker" data-i18n="hero_kicker">Portfolio — built by hand</p>
-    <h1 id="hero-name">Giovanna<br>Ribas<span class="dot">.</span></h1>
-    <ul class="hero__meta">
-      <li>software engineering</li>
-      <li>creative technology</li>
-      <li>Curitiba, Brazil</li>
-      <li data-i18n="hero_meta_build">building across code, design &amp; people</li>
-    </ul>
+<!-- ============ ABOUT / IDENTITY PAGE ============ -->
+<section id="about" class="about" aria-labelledby="hero-name">
+  <div class="about__intro">
+    <p class="about__hi" data-i18n="hi">Hi, my name is</p>
+    <h1 id="hero-name">Giovanna Ribas<span class="dot">.</span></h1>
+    <p class="about__say" data-i18n="say">she builds things — with code, design &amp; people</p>
+
+    <p class="about__roleslabel" data-i18n="roles_kicker">&gt; CURRENT ROLES &gt;&gt;</p>
+    <div class="stamps">
+      <span class="stamp stamp--rect">
+        <span class="stamp__glyph">&lt;/&gt;</span>
+        <span data-i18n="role_1">Software Engineering Student</span>
+        <small>PUCPR</small>
+      </span>
+      <span class="stamp stamp--oct">
+        <span class="stamp__glyph">&#9679;</span>
+        <span data-i18n="role_2">Software Development Intern</span>
+        <small data-i18n="role_2_tag">in production</small>
+      </span>
+      <span class="stamp stamp--pill">
+        <span class="stamp__glyph">&#10022;</span>
+        <span data-i18n="role_3">Visual &amp; Creative Designer</span>
+        <small data-i18n="role_3_tag">identity · illustration · image</small>
+      </span>
+      <span class="stamp stamp--circle">
+        <span>Coffee &amp; Code</span>
+        <small data-i18n="role_4_sub">founder &amp; lead</small>
+      </span>
+    </div>
+
+    <p class="about__bio" data-i18n="bio">Giovanna Ribas is a software engineering student and developer from Curitiba, Brazil. She works across software, data and design — building production features and automations, and visual work and community projects the rest of the time. She founded and leads Coffee &amp; Code, a student tech club at PUCPR.</p>
   </div>
 
-  <figure class="idcard" aria-label="Creative ID">
-    <div class="idcard__head">
-      <span data-i18n="id_title">CREATIVE ID</span>
-      <span class="idcard__no">REC&middot;01</span>
+  <figure class="passport" aria-label="Identity page">
+    <div class="passport__page passport__page--stamps" aria-hidden="true">
+      <span class="pstamp pstamp--1">SHIPPED</span>
+      <span class="pstamp pstamp--2">MERGED</span>
+      <span class="pstamp pstamp--3">DEPLOYED</span>
+      <span class="pstamp pstamp--4">OPEN<br>SOURCE</span>
+      <span class="pstamp pstamp--5">PROTOTYPE</span>
+      <span class="pstamp pstamp--6">BUILT<br>BY HAND</span>
     </div>
-    <div class="idcard__body">
-      <img class="idcard__photo" src="assets/images/profile/flower-avatar.png"
-           width="220" height="220" alt="Illustration by Giovanna Ribas, used as profile image">
-      <dl class="idcard__fields">
-        <div><dt data-i18n="id_name">NAME</dt><dd>Giovanna Ribas</dd></div>
-        <div><dt data-i18n="id_based">BASED IN</dt><dd>Curitiba, Brazil</dd></div>
-        <div><dt data-i18n="id_study">STUDY</dt><dd>Software Engineering @ PUCPR</dd></div>
-        <div><dt data-i18n="id_work">WORK</dt><dd data-i18n="id_work_v">Software Development Intern</dd></div>
-        <div><dt data-i18n="id_builds">BUILDS</dt><dd data-i18n="id_builds_v">software &middot; interfaces &middot; systems &middot; communities &middot; visual identities</dd></div>
-      </dl>
-    </div>
-    <div class="idcard__strip" aria-hidden="true">
-      <span></span><span></span><span></span><span></span><span></span><span></span>
-      <em data-i18n="id_status">open to build things with good people</em>
+    <div class="passport__page passport__page--id">
+      <span class="passport__tag">PASSPORT</span>
+      <div class="passport__row">
+        <span class="passport__photo">
+          <img src="assets/images/profile/flower-avatar.png" width="220" height="220"
+               alt="Illustration by Giovanna Ribas, used in place of a portrait">
+        </span>
+        <dl class="passport__fields">
+          <div><dt data-i18n="id_name">NAME</dt><dd>Giovanna Ribas</dd></div>
+          <div><dt data-i18n="id_based">BASED IN</dt><dd>Curitiba, Brazil</dd></div>
+          <div><dt data-i18n="id_exp">EXPERIENCE</dt><dd data-i18n="id_exp_v">Software Development Intern</dd></div>
+          <div><dt data-i18n="id_edu">EDUCATION</dt><dd>Software Engineering @ PUCPR</dd></div>
+          <div><dt data-i18n="id_builds">BUILDS</dt><dd data-i18n="id_builds_v">software · interfaces · systems · communities · visual identities</dd></div>
+        </dl>
+      </div>
+      <span class="passport__seal">CURITIBA<br>· BRAZIL ·</span>
+      <p class="mrz">P&lt;BRA&lt;&lt;RIBAS&lt;&lt;GIOVANNA&lt;&lt;BUILDS&lt;&lt;THINGS&lt;&lt;&lt;&lt;&lt;&lt;&lt;<br>SOFTWARE&lt;&lt;DESIGN&lt;&lt;PEOPLE&lt;&lt;CURITIBA&lt;BRAZIL&lt;&lt;&lt;&lt;&lt;</p>
     </div>
   </figure>
-</section>
-
-<!-- ============ ROLES ============ -->
-<section class="roles" aria-labelledby="roles-h">
-  <p class="section-label"><span>01</span> <span id="roles-h" data-i18n="roles_h">Current roles</span></p>
-  <div class="roles__set">
-    <article class="role role--spec">
-      <span class="role__mark">&lt;/&gt;</span>
-      <h3 data-i18n="role_1">Software Engineering Student</h3>
-      <p data-i18n="role_1_sub">PUCPR — foundations, systems, practice</p>
-    </article>
-    <article class="role role--status">
-      <span class="role__dot" aria-hidden="true"></span>
-      <h3 data-i18n="role_2">Software Development Intern</h3>
-      <p data-i18n="role_2_sub">production software, day to day</p>
-    </article>
-    <article class="role role--tag">
-      <h3 data-i18n="role_3">Visual &amp; Creative Designer</h3>
-      <p data-i18n="role_3_sub">identity, illustration, image, photography</p>
-    </article>
-    <article class="role role--seal">
-      <h3>Coffee &amp; Code</h3>
-      <p data-i18n="role_4_sub">founder &amp; lead</p>
-    </article>
-  </div>
 </section>
 
 <!-- ============ SELECTED WORK ============ -->
