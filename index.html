@@ -3,258 +3,393 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Giovanna Ribas</title>
-<meta name="description" content="Personal hub and portfolio of Giovanna Ribas - software engineering, data, design and social impact.">
-<link rel="icon" href="https://github.com/ribasgiovanna.png">
+<title>Giovanna Ribas — builds things with code, design & people</title>
+<meta name="description" content="Portfolio of Giovanna Ribas: software engineering, data automation, creative technology, visual design and community projects. Built by hand.">
+<link rel="canonical" href="https://ribasgiovanna.github.io/">
+<meta name="theme-color" content="#f6f2ec" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14110d" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Giovanna Ribas — builds things with code, design & people">
+<meta property="og:description" content="Software engineering, data automation, creative technology, visual design and community projects.">
+<meta property="og:url" content="https://ribasgiovanna.github.io/">
+<meta property="og:image" content="https://ribasgiovanna.github.io/assets/og/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Giovanna Ribas">
+<meta name="twitter:description" content="Builds things with code, design & people.">
+<meta name="twitter:image" content="https://ribasgiovanna.github.io/assets/og/og.png">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23b0533c'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='20' fill='%23f6f2ec' text-anchor='middle'%3EG%3C/text%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="assets/images/profile/flower-avatar.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Giovanna Ribas",
+  "url": "https://ribasgiovanna.github.io/",
+  "jobTitle": "Software Development Intern",
+  "alumniOf": "Pontifícia Universidade Católica do Paraná (PUCPR)",
+  "address": { "@type": "PostalAddress", "addressLocality": "Curitiba", "addressCountry": "BR" },
+  "sameAs": [
+    "https://github.com/ribasgiovanna",
+    "https://www.linkedin.com/in/giovannaribasdosreis/",
+    "https://www.behance.net/ribestudio"
+  ]
+}
+</script>
 </head>
 <body>
 
-<header class="topbar">
-  <a class="brand" href="#top">Giovanna Ribas</a>
-  <button id="lang-toggle" class="lang-toggle" type="button" aria-label="Switch language">PT</button>
+<a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+
+<header class="nav">
+  <a class="nav__brand" href="#top">Giovanna Ribas</a>
+  <nav class="nav__links" aria-label="Sections">
+    <a href="#work" data-i18n="nav_work">Work</a>
+    <a href="#coffee" data-i18n="nav_coffee">Coffee &amp; Code</a>
+    <a href="#currently" data-i18n="nav_currently">Currently</a>
+    <a href="#contact" data-i18n="nav_contact">Contact</a>
+  </nav>
+  <button id="lang" class="nav__lang" type="button">PT</button>
 </header>
 
-<main id="top">
+<main id="main">
+<span id="top"></span>
 
-  <!-- HERO -->
-  <section class="hero">
-    <img class="avatar" src="https://github.com/ribasgiovanna.png" alt="Giovanna Ribas" width="120" height="120">
-    <h1>Giovanna Ribas</h1>
-    <p class="role" data-i18n="role">Software Engineering student &amp; software development intern</p>
-    <p class="tagline" data-i18n="tagline">
-      Personal hub and central portfolio &mdash; where software engineering meets
-      design, creativity, people and social impact.
-    </p>
-    <nav class="links">
-      <a href="https://github.com/ribasgiovanna">GitHub</a>
-      <a href="https://www.linkedin.com/in/giovannaribasdosreis/">LinkedIn</a>
-      <a href="https://drive.google.com/drive/folders/1Pruit6vpBDIKMRrGLuLLc2SDCXhNd-VL?usp=sharing" data-i18n="link_creative">Creative Collection</a>
-      <a href="#coffee-code">Coffee &amp; Code</a>
-      <!-- TODO: add a public CV link when ready -->
-      <a href="#contact" data-i18n="link_contact">Contact</a>
-    </nav>
-  </section>
+<!-- ============ HERO / CREATIVE ID ============ -->
+<section class="hero" aria-labelledby="hero-name">
+  <div class="hero__type">
+    <p class="kicker" data-i18n="hero_kicker">Portfolio — built by hand</p>
+    <h1 id="hero-name">Giovanna<br>Ribas<span class="dot">.</span></h1>
+    <ul class="hero__meta">
+      <li>software engineering</li>
+      <li>creative technology</li>
+      <li>Curitiba, Brazil</li>
+      <li data-i18n="hero_meta_build">building across code, design &amp; people</li>
+    </ul>
+  </div>
 
-  <!-- EXPLORE / HUB -->
-  <section id="explore">
-    <h2 data-i18n="explore_h">Explore what I do</h2>
-    <div class="grid">
-      <a class="tile" href="https://github.com/ribasgiovanna">
-        <span class="glyph">&lt;/&gt;</span>
-        <span class="tile-title" data-i18n="tile_tech">TECH</span>
-        <span class="tile-sub">GitHub</span>
-      </a>
-      <a class="tile" href="https://drive.google.com/drive/folders/1Pruit6vpBDIKMRrGLuLLc2SDCXhNd-VL?usp=sharing">
-        <span class="glyph">&#10022;</span>
-        <span class="tile-title" data-i18n="tile_creative">CREATIVE</span>
-        <span class="tile-sub">Drive</span>
-      </a>
-      <a class="tile" href="#community">
-        <span class="glyph">&#9673;</span>
-        <span class="tile-title" data-i18n="tile_community">COMMUNITY</span>
-        <span class="tile-sub" data-i18n="tile_community_sub">Social impact</span>
-      </a>
-      <a class="tile" href="#coffee-code">
-        <span class="glyph">&#9635;</span>
-        <span class="tile-title">COFFEE &amp; CODE</span>
-        <span class="tile-sub" data-i18n="tile_coffee_sub">Founder</span>
-      </a>
+  <figure class="idcard" aria-label="Creative ID">
+    <div class="idcard__head">
+      <span data-i18n="id_title">CREATIVE ID</span>
+      <span class="idcard__no">REC&middot;01</span>
     </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about">
-    <h2 data-i18n="about_h">About</h2>
-    <p data-i18n="about_p">
-      Software Engineering student and software development intern. I work across
-      software, data and design: building production features and ETL pipelines,
-      replacing manual and error-prone processes with automation, and developing
-      web and interactive applications, supported by a background in visual design
-      and digital identity.
-    </p>
-  </section>
-
-  <!-- EDUCATION -->
-  <section id="education">
-    <h2 data-i18n="education_h">Education</h2>
-    <p data-i18n="education_p">Software Engineering student &mdash; PUCPR.</p>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section id="experience">
-    <h2 data-i18n="experience_h">Experience</h2>
-    <h3 data-i18n="experience_role">Software Development Intern &mdash; currently</h3>
-    <p data-i18n="experience_p1">
-      Working on the development and maintenance of production software across
-      frontend, backend, APIs and databases: implementing features, investigating
-      bugs, and integrating different layers of existing systems.
-    </p>
-    <p class="muted" data-i18n="experience_p2">
-      Due to the proprietary nature of the systems I work on, source code and
-      internal materials are not publicly available.
-    </p>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects">
-    <h2 data-i18n="projects_h">Projects</h2>
-
-    <article class="card">
-      <h3>
-        <a href="https://github.com/ribasgiovanna/datasus">DATASUS Blood Bank</a>
-        <span class="badge" data-i18n="badge_team">team</span>
-      </h3>
-      <p class="flow" data-i18n="datasus_flow">Public data &rarr; automation &rarr; processing &rarr; visualization.</p>
-      <p data-i18n="datasus_p">
-        Automated extraction (RPA / Selenium) of hemotherapy data from the DATASUS
-        TabNet, with parallel execution, checkpointing, data treatment with pandas
-        and a Streamlit dashboard. Project idea and work on the extraction and
-        treatment modules.
-      </p>
-      <ul class="tags"><li>Python</li><li>Selenium</li><li>pandas</li><li>RPA</li><li>Streamlit</li></ul>
-    </article>
-
-    <article class="card">
-      <h3>
-        <a href="https://github.com/ribasgiovanna/jogo-atrasado-para-a-faculdade">Corrida para a Faculdade</a>
-      </h3>
-      <p data-i18n="game_p">
-        Individual game in Python / Pygame: state-driven programming, jump physics,
-        collisions, progressive difficulty, HUD and input handling. The game code is
-        my own work; the visual assets are AI-generated and presented transparently.
-      </p>
-      <ul class="tags"><li>Python</li><li>Pygame</li><li data-i18n="tag_gamedev">game development</li></ul>
-    </article>
-
-    <article class="card">
-      <h3>
-        <a href="https://github.com/ribasgiovanna/pibble_express">Pibble Express</a>
-        <span class="badge" data-i18n="badge_team">team</span>
-      </h3>
-      <p data-i18n="pibble_p">
-        Django delivery-management system with authentication, access levels, CRUD,
-        a REST API, models and an integrated frontend. My contribution: the
-        Employees module and its integration with Deliveries, CPF/CNPJ registration,
-        the administrative dashboard, and form standardization / interface adjustments.
-      </p>
-      <ul class="tags"><li>Django</li><li>Django REST Framework</li><li data-i18n="tag_auth">authentication</li><li>CRUD</li></ul>
-    </article>
-
-    <article class="card" id="coffee-code">
-      <h3 data-i18n="coffee_h">Coffee &amp; Code &mdash; university tech club</h3>
-      <p data-i18n="coffee_p">
-        A university tech club I created and lead, built to give students a more
-        accessible, collaborative and hands-on environment to learn, build projects
-        and exchange knowledge. It connects technology, education, community,
-        leadership, design and initiative.
-      </p>
-    </article>
-  </section>
-
-  <!-- SKILLS -->
-  <section id="skills">
-    <h2 data-i18n="skills_h">Technical Skills</h2>
-    <div class="skill-icons" aria-hidden="true">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="" title="Python">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="" title="JavaScript">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="" title="TypeScript">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="" title="Django">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="" title="HTML5">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="" title="CSS3">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="" title="pandas">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="" title="PostgreSQL">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" alt="" title="SQL Server">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="" title="MongoDB">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="" title="Docker">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="" title="Git">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="" title="Linux">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="" title="Figma">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" alt="" title="Blender">
+    <div class="idcard__body">
+      <img class="idcard__photo" src="assets/images/profile/flower-avatar.png"
+           width="220" height="220" alt="Illustration by Giovanna Ribas, used as profile image">
+      <dl class="idcard__fields">
+        <div><dt data-i18n="id_name">NAME</dt><dd>Giovanna Ribas</dd></div>
+        <div><dt data-i18n="id_based">BASED IN</dt><dd>Curitiba, Brazil</dd></div>
+        <div><dt data-i18n="id_study">STUDY</dt><dd>Software Engineering @ PUCPR</dd></div>
+        <div><dt data-i18n="id_work">WORK</dt><dd data-i18n="id_work_v">Software Development Intern</dd></div>
+        <div><dt data-i18n="id_builds">BUILDS</dt><dd data-i18n="id_builds_v">software &middot; interfaces &middot; systems &middot; communities &middot; visual identities</dd></div>
+      </dl>
     </div>
-    <ul class="skill-list">
-      <li><strong data-i18n="skills_lang">Languages:</strong> Python, JavaScript / TypeScript, SQL</li>
-      <li><strong data-i18n="skills_web">Web:</strong> Django, Django REST Framework, REST APIs, HTML, CSS</li>
-      <li><strong data-i18n="skills_data">Data &amp; automation:</strong> pandas, ETL, Selenium, RPA, Streamlit</li>
-      <li><strong data-i18n="skills_db">Databases:</strong> SQL Server, PostgreSQL, MongoDB</li>
-      <li><strong data-i18n="skills_tools">Tools &amp; infrastructure:</strong> Git &amp; GitHub, Docker, Linux, Windows Server</li>
-      <li><strong data-i18n="skills_concepts">Concepts:</strong> <span data-i18n="skills_concepts_v">frontend, backend, CRUD, authentication, access levels, bug investigation</span></li>
-    </ul>
-  </section>
+    <div class="idcard__strip" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span><span></span>
+      <em data-i18n="id_status">open to build things with good people</em>
+    </div>
+  </figure>
+</section>
 
-  <!-- CREATIVE -->
-  <section id="creative">
-    <h2 data-i18n="creative_h">Creative Work</h2>
-    <p data-i18n="creative_p">
-      Graphic design, image manipulation, digital illustration, photography and
-      visual experiments.
-    </p>
-    <p data-i18n="creative_pieces_label">Selected pieces:</p>
-    <ul class="tags pieces">
-      <li>REACHING</li><li>WHAT REMAINS</li><li>MOMENTS</li><li>flower</li>
-      <li>My love 2.0</li><li>9to5</li><li>RUN</li>
-    </ul>
-    <p>
-      <a href="https://drive.google.com/drive/folders/1Pruit6vpBDIKMRrGLuLLc2SDCXhNd-VL?usp=sharing" data-i18n="creative_link">See the full Creative Collection &rarr;</a>
-      &nbsp;&middot;&nbsp;
-      <a href="https://www.behance.net/ribestudio">Behance</a>
-    </p>
-  </section>
+<!-- ============ ROLES ============ -->
+<section class="roles" aria-labelledby="roles-h">
+  <p class="section-label"><span>01</span> <span id="roles-h" data-i18n="roles_h">Current roles</span></p>
+  <div class="roles__set">
+    <article class="role role--spec">
+      <span class="role__mark">&lt;/&gt;</span>
+      <h3 data-i18n="role_1">Software Engineering Student</h3>
+      <p data-i18n="role_1_sub">PUCPR — foundations, systems, practice</p>
+    </article>
+    <article class="role role--status">
+      <span class="role__dot" aria-hidden="true"></span>
+      <h3 data-i18n="role_2">Software Development Intern</h3>
+      <p data-i18n="role_2_sub">production software, day to day</p>
+    </article>
+    <article class="role role--tag">
+      <h3 data-i18n="role_3">Visual &amp; Creative Designer</h3>
+      <p data-i18n="role_3_sub">identity, illustration, image, photography</p>
+    </article>
+    <article class="role role--seal">
+      <h3>Coffee &amp; Code</h3>
+      <p data-i18n="role_4_sub">founder &amp; lead</p>
+    </article>
+  </div>
+</section>
 
-  <!-- COMMUNITY -->
-  <section id="community">
-    <h2 data-i18n="community_h">Community &amp; Social Impact</h2>
-    <p data-i18n="community_p">
-      Initiatives around collaboration, volunteering, communication, events, social
-      responsibility and collective building:
-    </p>
-    <ul class="bullets">
-      <li data-i18n="community_1"><strong>Diretoria da Mulher (PUCPR)</strong> &mdash; Events Coordinator</li>
-      <li data-i18n="community_2"><strong>Teia do Bem</strong> &mdash; social media, communication and outreach</li>
-      <li data-i18n="community_3"><strong>Interact</strong>, environmental actions, activities with children and other volunteer work</li>
-    </ul>
-  </section>
+<!-- ============ SELECTED WORK ============ -->
+<section id="work" class="work" aria-labelledby="work-h">
+  <p class="section-label"><span>02</span> <span id="work-h" data-i18n="work_h">Selected work</span></p>
+  <p class="work__intro" data-i18n="work_intro">Software, data, a game, a community. Different languages for the same habit — making things.</p>
 
-  <!-- BEYOND -->
-  <section id="beyond">
-    <h2 data-i18n="beyond_h">Beyond the Screen</h2>
-    <p data-i18n="beyond_p">
-      Creative curiosity away from the computer, including cooking &mdash; breads,
-      sweets, cookies and other experiments.
-    </p>
-  </section>
+  <div class="filters" role="group" aria-label="Filter work">
+    <button type="button" class="chip is-on" data-filter="all" data-i18n="f_all">All</button>
+    <button type="button" class="chip" data-filter="code" data-i18n="f_code">Code</button>
+    <button type="button" class="chip" data-filter="design" data-i18n="f_design">Design</button>
+    <button type="button" class="chip" data-filter="people" data-i18n="f_people">People</button>
+    <button type="button" class="chip" data-filter="play" data-i18n="f_play">Play</button>
+  </div>
 
-  <!-- MORE -->
-  <section id="more">
-    <h2 data-i18n="more_h">More on GitHub</h2>
-    <ul class="bullets">
-      <li><a href="https://github.com/ribasgiovanna/automacao-dados-saude">Health Data Automation</a> &mdash; <span data-i18n="more_1">cleaning and standardization of DATASUS data with pandas</span></li>
-      <li><a href="https://github.com/ribasgiovanna/netflix-dados">Netflix Data Pipeline</a> &mdash; <span data-i18n="more_2">ETL study: consolidates spreadsheets, extracts campaigns from UTM links, outputs CSV/XLSX</span></li>
-      <li><a href="https://github.com/ribasgiovanna/Curitibars">Curitibars</a> &mdash; <span data-i18n="more_3">static site, a guide to bars in Curitiba (team)</span></li>
-      <li><a href="https://github.com/ribasgiovanna?tab=repositories" data-i18n="more_4">&hellip;and other academic projects</a></li>
-    </ul>
-  </section>
+  <ul class="work__grid">
+    <li class="wk wk--wide" data-kind="code">
+      <a href="#datasus">
+        <span class="wk__img"><img src="assets/images/tech/datasus-dashboard.webp" width="1600" height="1195" loading="lazy" alt="DATASUS blood bank dashboard built with Streamlit"></span>
+        <span class="wk__meta"><span class="wk__kind">code · data</span><strong>DATASUS Blood Bank</strong><span data-i18n="wk_datasus">RPA + pandas + a dashboard for public health data</span></span>
+      </a>
+    </li>
+    <li class="wk" data-kind="play">
+      <a href="#corrida">
+        <span class="wk__img"><img src="assets/images/tech/game-start-screen.webp" width="1200" height="800" loading="lazy" alt="Start screen of Corrida para a Faculdade"></span>
+        <span class="wk__meta"><span class="wk__kind">play</span><strong>Corrida para a Faculdade</strong><span data-i18n="wk_game">a small 2D game in Python / Pygame</span></span>
+      </a>
+    </li>
+    <li class="wk" data-kind="code">
+      <a href="#pibble">
+        <span class="wk__img"><img src="assets/images/tech/pibble-dashboard.webp" width="1200" height="750" loading="lazy" alt="Pibble Express admin dashboard"></span>
+        <span class="wk__meta"><span class="wk__kind">code · web</span><strong>Pibble Express</strong><span data-i18n="wk_pibble">Django delivery system — team project</span></span>
+      </a>
+    </li>
+    <li class="wk" data-kind="people">
+      <a href="#coffee">
+        <span class="wk__img wk__img--flat"><span class="wk__ph" data-i18n="ph_identity">identity &amp; posters — image pending</span></span>
+        <span class="wk__meta"><span class="wk__kind">people</span><strong>Coffee &amp; Code</strong><span data-i18n="wk_coffee">a student tech club I started and lead</span></span>
+      </a>
+    </li>
+    <li class="wk" data-kind="design">
+      <a href="#creative">
+        <span class="wk__img wk__img--flat"><span class="wk__ph">REACHING — image pending</span></span>
+        <span class="wk__meta"><span class="wk__kind">design</span><strong data-i18n="wk_creative_t">Creative gallery</strong><span data-i18n="wk_creative">illustration, image manipulation, experiments</span></span>
+      </a>
+    </li>
+  </ul>
+</section>
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <h2 data-i18n="contact_h">Contact</h2>
-    <ul class="bullets">
-      <li><strong data-i18n="contact_email">Email:</strong> <a href="mailto:giovannareis07@gmail.com">giovannareis07@gmail.com</a></li>
-      <li><strong data-i18n="contact_email_edu">Academic email:</strong> <a href="mailto:ribas.giovanna@pucpr.edu.br">ribas.giovanna@pucpr.edu.br</a></li>
-      <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/giovannaribasdosreis/">linkedin.com/in/giovannaribasdosreis</a></li>
-      <li><strong>GitHub:</strong> <a href="https://github.com/ribasgiovanna">github.com/ribasgiovanna</a></li>
-      <li><strong>Behance:</strong> <a href="https://www.behance.net/ribestudio">behance.net/ribestudio</a></li>
-      <li><strong>Drive:</strong> <a href="https://drive.google.com/drive/folders/1Pruit6vpBDIKMRrGLuLLc2SDCXhNd-VL?usp=sharing" data-i18n="contact_drive">Creative Collection folders</a></li>
-    </ul>
-    <!-- TODO: add a public CV link when ready -->
-  </section>
+<!-- ============ FEATURED: DATASUS ============ -->
+<section id="datasus" class="case" aria-labelledby="datasus-h">
+  <p class="section-label"><span>03</span> <span data-i18n="case_featured">Featured technical case</span></p>
+  <div class="case__grid">
+    <figure class="case__media">
+      <img src="assets/images/tech/datasus-dashboard.webp" width="1600" height="1195" loading="lazy" alt="DATASUS blood bank dashboard: KPIs and a monthly comparison chart">
+      <figcaption data-i18n="datasus_cap">Streamlit dashboard over the consolidated data.</figcaption>
+    </figure>
+    <div class="case__text">
+      <h2 id="datasus-h">DATASUS Blood Bank</h2>
+      <p class="flowline">DATASUS &rarr; Selenium &rarr; pandas &rarr; <span data-i18n="fl_processed">processed data</span> &rarr; Streamlit</p>
+
+      <h3 data-i18n="lbl_context">Context</h3>
+      <p data-i18n="datasus_context">Hemotherapy figures for the state of Paraná live in the DATASUS TabNet — a slow public interface, one query and one export at a time.</p>
+
+      <h3 data-i18n="lbl_built">What we built</h3>
+      <p data-i18n="datasus_built">A robot (Selenium) that runs the queries and reads the result tables, a pandas layer that cleans and consolidates every period, and a Streamlit dashboard to compare volume across months and years. Final project for a Python course, with two teammates.</p>
+
+      <h3 data-i18n="lbl_role">My role</h3>
+      <p data-i18n="datasus_role">I proposed using the blood-bank data and worked on the extraction and treatment modules. Teammates: Jackson Beggi and wingCODING (RPA orchestration and dashboard).</p>
+
+      <p class="tagrow"><span>Python</span><span>Selenium</span><span>pandas</span><span>RPA</span><span>Streamlit</span></p>
+      <p><a class="cta" href="https://github.com/ribasgiovanna/datasus" target="_blank" rel="noopener noreferrer" data-i18n="cta_source">View source on GitHub &rarr;</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CORRIDA PARA A FACULDADE ============ -->
+<section id="corrida" class="case case--alt" aria-labelledby="corrida-h">
+  <p class="section-label"><span>04</span> <span data-i18n="case_game">Game — individual project</span></p>
+  <div class="case__grid case__grid--rev">
+    <figure class="case__media">
+      <img src="assets/images/tech/game-start-screen.webp" width="1200" height="800" loading="lazy" alt="Start screen: Corrida para a Faculdade">
+      <figcaption data-i18n="corrida_cap">Start screen. Art is AI-generated (noted below).</figcaption>
+    </figure>
+    <div class="case__text">
+      <h2 id="corrida-h">Corrida para a Faculdade</h2>
+      <p data-i18n="corrida_p1">A 2D endless-runner: a student is late for class and has to dodge the city. Reach 1000 points to pass; lose three lives and it's over.</p>
+      <p data-i18n="corrida_p2">Written in Python and Pygame — a clean state machine (menu / play / end), jump physics with gravity, random obstacles, difficulty that ramps with the score, lives with temporary invincibility, a HUD and a saved high score.</p>
+      <p class="note" data-i18n="corrida_note">The code is my own work. The visual assets are AI-generated and shown transparently.</p>
+      <p class="tagrow"><span>Python</span><span>Pygame</span><span data-i18n="tag_states">state machine</span></p>
+      <p><a class="cta" href="https://github.com/ribasgiovanna/jogo-atrasado-para-a-faculdade" target="_blank" rel="noopener noreferrer" data-i18n="cta_source">View source on GitHub &rarr;</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PIBBLE EXPRESS ============ -->
+<section id="pibble" class="case" aria-labelledby="pibble-h">
+  <p class="section-label"><span>05</span> <span data-i18n="case_team">Web — team project</span></p>
+  <div class="case__grid">
+    <figure class="case__media case__media--stack">
+      <img src="assets/images/tech/pibble-dashboard.webp" width="1200" height="750" loading="lazy" alt="Pibble Express dashboard with KPIs and recent deliveries">
+      <img src="assets/images/tech/pibble-funcionarios.webp" width="1200" height="750" loading="lazy" alt="Employee registration screen with CPF/CNPJ field and a list of employees">
+    </figure>
+    <div class="case__text">
+      <h2 id="pibble-h">Pibble Express</h2>
+      <p data-i18n="pibble_p">A Django delivery-management system: authentication, ADM/FUNC access levels, CRUD for clients, products, employees and deliveries, a REST API and an integrated frontend. Built with two teammates.</p>
+      <h3 data-i18n="pibble_role_h">My contribution</h3>
+      <ul class="ticks">
+        <li data-i18n="pibble_r1">Employees module and its integration with Deliveries</li>
+        <li data-i18n="pibble_r2">Registration accepting CPF or CNPJ (form + migration)</li>
+        <li data-i18n="pibble_r3">Administrative dashboard</li>
+        <li data-i18n="pibble_r4">Form standardization and interface adjustments</li>
+      </ul>
+      <p class="tagrow"><span>Django</span><span>DRF</span><span data-i18n="tag_auth">authentication</span><span>CRUD</span></p>
+      <p><a class="cta" href="https://github.com/ribasgiovanna/pibble_express" target="_blank" rel="noopener noreferrer" data-i18n="cta_source">View source on GitHub &rarr;</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COFFEE & CODE ============ -->
+<section id="coffee" class="coffee" aria-labelledby="coffee-h">
+  <p class="section-label section-label--onDark"><span>06</span> <span id="coffee-h">Coffee &amp; Code</span></p>
+  <div class="coffee__grid">
+    <div class="coffee__lead">
+      <p class="coffee__why" data-i18n="coffee_why">A university tech club I started and actively build, with the team.</p>
+      <p data-i18n="coffee_p1">It exists to give students a lower-barrier, hands-on place to learn, build projects together and share what they know — outside the pressure of a graded room.</p>
+      <p data-i18n="coffee_p2">I lead it where design and technology meet: the visual identity, the materials, how sessions are run, and how people are brought in.</p>
+    </div>
+    <div class="coffee__media">
+      <div class="frame frame--wide"><span data-i18n="ph_logo">logo &amp; identity — image pending</span></div>
+      <div class="frame"><span data-i18n="ph_poster">poster / session — image pending</span></div>
+      <div class="frame"><span data-i18n="ph_social">social piece — image pending</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CREATIVE GALLERY ============ -->
+<section id="creative" class="gallery" aria-labelledby="creative-h">
+  <p class="section-label"><span>07</span> <span id="creative-h" data-i18n="creative_h">Creative work</span></p>
+  <p class="gallery__intro" data-i18n="creative_intro">Graphic design, image manipulation, digital illustration, photography and visual experiments. A selection — images are being prepared.</p>
+  <div class="gallery__grid">
+    <button class="art art--lg" type="button" data-title="REACHING" data-cat="image / digital">
+      <span class="art__frame"><span class="art__ph">REACHING</span></span>
+      <span class="art__cap">REACHING</span>
+    </button>
+    <button class="art" type="button" data-title="MOMENTS" data-cat="series">
+      <span class="art__frame"><span class="art__ph">MOMENTS</span></span>
+      <span class="art__cap">MOMENTS</span>
+    </button>
+    <button class="art art--tall" type="button" data-title="WHAT REMAINS" data-cat="image / digital">
+      <span class="art__frame"><span class="art__ph">WHAT REMAINS</span></span>
+      <span class="art__cap">WHAT REMAINS</span>
+    </button>
+    <button class="art" type="button" data-title="flower" data-cat="illustration">
+      <span class="art__frame"><span class="art__ph">flower</span></span>
+      <span class="art__cap">flower</span>
+    </button>
+    <button class="art" type="button" data-title="My love 2.0" data-cat="image / digital">
+      <span class="art__frame"><span class="art__ph">My love 2.0</span></span>
+      <span class="art__cap">My love 2.0</span>
+    </button>
+    <button class="art art--wide" type="button" data-title="9to5" data-cat="series">
+      <span class="art__frame"><span class="art__ph">9to5</span></span>
+      <span class="art__cap">9to5</span>
+    </button>
+    <button class="art" type="button" data-title="RUN" data-cat="image / digital">
+      <span class="art__frame"><span class="art__ph">RUN</span></span>
+      <span class="art__cap">RUN</span>
+    </button>
+  </div>
+  <p><a class="cta" href="https://www.behance.net/ribestudio" target="_blank" rel="noopener noreferrer" data-i18n="cta_behance">More visual work on Behance &rarr;</a></p>
+</section>
+
+<!-- ============ COMMUNITY ============ -->
+<section id="community" class="community" aria-labelledby="community-h">
+  <p class="section-label"><span>08</span> <span id="community-h" data-i18n="community_h">Community &amp; social impact</span></p>
+  <p class="community__lead" data-i18n="community_lead">Building with people — collaboration, volunteering, communication and events.</p>
+  <div class="community__list">
+    <article class="ci">
+      <div class="frame frame--wide"><span data-i18n="ph_action">selected photo — image pending</span></div>
+      <div class="ci__text">
+        <h3>Diretoria da Mulher — PUCPR</h3>
+        <p data-i18n="ci_ddm">Events Coordinator: organizing events and communication, and initiatives around inclusion and social impact.</p>
+      </div>
+    </article>
+    <article class="ci ci--rev">
+      <div class="frame"><span data-i18n="ph_action">selected photo — image pending</span></div>
+      <div class="ci__text">
+        <h3>Teia do Bem</h3>
+        <p data-i18n="ci_teia">Social media: communication and outreach for the project's actions.</p>
+      </div>
+    </article>
+    <article class="ci">
+      <div class="frame frame--wide"><span data-i18n="ph_action">selected photo — image pending</span></div>
+      <div class="ci__text">
+        <h3 data-i18n="ci_vol_h">Interact &amp; volunteer work</h3>
+        <p data-i18n="ci_vol">Environmental actions, activities with children and other volunteer work.</p>
+      </div>
+    </article>
+  </div>
+  <p class="privacy-note" data-i18n="privacy_note">Photos are selected with care — no children's faces in sensitive contexts, no legible badges or personal data.</p>
+</section>
+
+<!-- ============ CURRENTLY ============ -->
+<section id="currently" class="currently" aria-labelledby="currently-h">
+  <p class="section-label"><span>09</span> <span id="currently-h" data-i18n="currently_h">Currently</span></p>
+  <div class="currently__grid">
+    <div>
+      <h3 data-i18n="cur_role">Software Development Intern</h3>
+      <p data-i18n="cur_p">Working on the development and maintenance of production software across frontend, backend, APIs and databases — implementing features, investigating bugs and integrating layers of existing systems.</p>
+      <p class="note" data-i18n="cur_note">Due to the proprietary nature of the systems I work on, source code and internal materials are not publicly available.</p>
+    </div>
+    <div>
+      <h3 data-i18n="cur_study_h">Study</h3>
+      <p>Software Engineering @ PUCPR</p>
+      <h3 data-i18n="cur_more_h">More projects</h3>
+      <ul class="linklist">
+        <li><a href="https://github.com/ribasgiovanna/automacao-dados-saude" target="_blank" rel="noopener noreferrer">Health Data Automation</a></li>
+        <li><a href="https://github.com/ribasgiovanna/netflix-dados" target="_blank" rel="noopener noreferrer">Netflix Data Pipeline</a></li>
+        <li><a href="https://github.com/ribasgiovanna/Curitibars" target="_blank" rel="noopener noreferrer">Curitibars</a></li>
+        <li><a href="https://github.com/ribasgiovanna?tab=repositories" target="_blank" rel="noopener noreferrer" data-i18n="cur_allrepos">All repositories &rarr;</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BEYOND THE SCREEN ============ -->
+<section id="beyond" class="beyond" aria-labelledby="beyond-h">
+  <p class="section-label"><span>10</span> <span id="beyond-h" data-i18n="beyond_h">Beyond the screen</span></p>
+  <p class="beyond__lead" data-i18n="beyond_lead">Things I like making away from a keyboard — mostly baking, some photography.</p>
+  <div class="beyond__grid">
+    <div class="frame frame--tall"><span data-i18n="ph_food">bread — image pending</span></div>
+    <div class="frame"><span data-i18n="ph_food">cookies — image pending</span></div>
+    <div class="frame"><span data-i18n="ph_food">dessert — image pending</span></div>
+    <div class="frame frame--wide"><span data-i18n="ph_photo">photography — image pending</span></div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="contact" aria-labelledby="contact-h">
+  <p class="section-label"><span>11</span> <span id="contact-h" data-i18n="contact_h">Contact</span></p>
+  <p class="contact__line" data-i18n="contact_line">Open to build things with good people.</p>
+  <ul class="contact__links">
+    <li><a href="mailto:giovannareis07@gmail.com">giovannareis07@gmail.com</a></li>
+    <li><a href="https://www.linkedin.com/in/giovannaribasdosreis/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+    <li><a href="https://github.com/ribasgiovanna" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+    <li><a href="https://www.behance.net/ribestudio" target="_blank" rel="noopener noreferrer">Behance</a></li>
+  </ul>
+</section>
 
 </main>
 
-<footer>
-  <p>&copy; <span id="year"></span> Giovanna Ribas &middot;
-     <span data-i18n="footer_built">built with HTML, CSS and JavaScript, hosted on GitHub Pages</span></p>
+<footer class="foot">
+  <p><span data-i18n="foot_note">Built by hand with HTML, CSS &amp; JavaScript. No framework.</span>
+     &nbsp;·&nbsp; &copy; <span id="year"></span> Giovanna Ribas</p>
 </footer>
+
+<!-- artwork modal -->
+<div id="modal" class="modal" hidden>
+  <div class="modal__box" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <button id="modal-close" class="modal__close" type="button" aria-label="Close">&times;</button>
+    <div class="modal__frame"><span id="modal-ph"></span></div>
+    <h3 id="modal-title"></h3>
+    <p id="modal-cat" class="modal__cat"></p>
+    <p class="modal__todo" data-i18n="modal_todo">Full image and a short note about this piece are being added.</p>
+  </div>
+</div>
 
 <script src="script.js"></script>
 </body>

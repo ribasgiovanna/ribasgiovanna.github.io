@@ -1,187 +1,284 @@
 (function () {
   "use strict";
 
+  /* ---------------------------------------------------------------
+     i18n — every visible string keyed here, EN + PT.
+     HTML carries the English text so the page reads fine with no JS.
+     --------------------------------------------------------------- */
   var I18N = {
     en: {
-      role: "Software Engineering student &amp; software development intern",
-      tagline: "Personal hub and central portfolio &mdash; where software engineering meets design, creativity, people and social impact.",
-      link_creative: "Creative Collection",
-      link_contact: "Contact",
+      skip: "Skip to content",
+      nav_work: "Work", nav_coffee: "Coffee &amp; Code", nav_currently: "Currently", nav_contact: "Contact",
 
-      explore_h: "Explore what I do",
-      tile_tech: "TECH",
-      tile_creative: "CREATIVE",
-      tile_community: "COMMUNITY",
-      tile_community_sub: "Social impact",
-      tile_coffee_sub: "Founder",
+      hero_kicker: "Portfolio — built by hand",
+      hero_meta_build: "building across code, design &amp; people",
 
-      about_h: "About",
-      about_p: "Software Engineering student and software development intern. I work across software, data and design: building production features and ETL pipelines, replacing manual and error-prone processes with automation, and developing web and interactive applications, supported by a background in visual design and digital identity.",
+      id_title: "CREATIVE ID",
+      id_name: "NAME", id_based: "BASED IN", id_study: "STUDY", id_work: "WORK",
+      id_work_v: "Software Development Intern",
+      id_builds: "BUILDS",
+      id_builds_v: "software &middot; interfaces &middot; systems &middot; communities &middot; visual identities",
+      id_status: "open to build things with good people",
 
-      education_h: "Education",
-      education_p: "Software Engineering student &mdash; PUCPR.",
+      roles_h: "Current roles",
+      role_1: "Software Engineering Student", role_1_sub: "PUCPR — foundations, systems, practice",
+      role_2: "Software Development Intern", role_2_sub: "production software, day to day",
+      role_3: "Visual &amp; Creative Designer", role_3_sub: "identity, illustration, image, photography",
+      role_4_sub: "founder &amp; lead",
 
-      experience_h: "Experience",
-      experience_role: "Software Development Intern &mdash; currently",
-      experience_p1: "Working on the development and maintenance of production software across frontend, backend, APIs and databases: implementing features, investigating bugs, and integrating different layers of existing systems.",
-      experience_p2: "Due to the proprietary nature of the systems I work on, source code and internal materials are not publicly available.",
+      work_h: "Selected work",
+      work_intro: "Software, data, a game, a community. Different languages for the same habit — making things.",
+      f_all: "All", f_code: "Code", f_design: "Design", f_people: "People", f_play: "Play",
+      wk_datasus: "RPA + pandas + a dashboard for public health data",
+      wk_game: "a small 2D game in Python / Pygame",
+      wk_pibble: "Django delivery system — team project",
+      wk_coffee: "a student tech club I started and lead",
+      wk_creative_t: "Creative gallery", wk_creative: "illustration, image manipulation, experiments",
+      ph_identity: "identity &amp; posters — image pending",
 
-      projects_h: "Projects",
-      badge_team: "team",
-      datasus_flow: "Public data &rarr; automation &rarr; processing &rarr; visualization.",
-      datasus_p: "Automated extraction (RPA / Selenium) of hemotherapy data from the DATASUS TabNet, with parallel execution, checkpointing, data treatment with pandas and a Streamlit dashboard. Project idea and work on the extraction and treatment modules.",
-      game_p: "Individual game in Python / Pygame: state-driven programming, jump physics, collisions, progressive difficulty, HUD and input handling. The game code is my own work; the visual assets are AI-generated and presented transparently.",
-      tag_gamedev: "game development",
-      pibble_p: "Django delivery-management system with authentication, access levels, CRUD, a REST API, models and an integrated frontend. My contribution: the Employees module and its integration with Deliveries, CPF/CNPJ registration, the administrative dashboard, and form standardization / interface adjustments.",
+      case_featured: "Featured technical case",
+      datasus_cap: "Streamlit dashboard over the consolidated data.",
+      fl_processed: "processed data",
+      lbl_context: "Context", lbl_built: "What we built", lbl_role: "My role",
+      datasus_context: "Hemotherapy figures for the state of Paraná live in the DATASUS TabNet — a slow public interface, one query and one export at a time.",
+      datasus_built: "A robot (Selenium) that runs the queries and reads the result tables, a pandas layer that cleans and consolidates every period, and a Streamlit dashboard to compare volume across months and years. Final project for a Python course, with two teammates.",
+      datasus_role: "I proposed using the blood-bank data and worked on the extraction and treatment modules. Teammates: Jackson Beggi and wingCODING (RPA orchestration and dashboard).",
+      cta_source: "View source on GitHub &rarr;",
+
+      case_game: "Game — individual project",
+      corrida_cap: "Start screen. Art is AI-generated (noted below).",
+      corrida_p1: "A 2D endless-runner: a student is late for class and has to dodge the city. Reach 1000 points to pass; lose three lives and it's over.",
+      corrida_p2: "Written in Python and Pygame — a clean state machine (menu / play / end), jump physics with gravity, random obstacles, difficulty that ramps with the score, lives with temporary invincibility, a HUD and a saved high score.",
+      corrida_note: "The code is my own work. The visual assets are AI-generated and shown transparently.",
+      tag_states: "state machine",
+
+      case_team: "Web — team project",
+      pibble_p: "A Django delivery-management system: authentication, ADM/FUNC access levels, CRUD for clients, products, employees and deliveries, a REST API and an integrated frontend. Built with two teammates.",
+      pibble_role_h: "My contribution",
+      pibble_r1: "Employees module and its integration with Deliveries",
+      pibble_r2: "Registration accepting CPF or CNPJ (form + migration)",
+      pibble_r3: "Administrative dashboard",
+      pibble_r4: "Form standardization and interface adjustments",
       tag_auth: "authentication",
-      coffee_h: "Coffee &amp; Code &mdash; university tech club",
-      coffee_p: "A university tech club I created and lead, built to give students a more accessible, collaborative and hands-on environment to learn, build projects and exchange knowledge. It connects technology, education, community, leadership, design and initiative.",
 
-      skills_h: "Technical Skills",
-      skills_lang: "Languages:",
-      skills_web: "Web:",
-      skills_data: "Data &amp; automation:",
-      skills_db: "Databases:",
-      skills_tools: "Tools &amp; infrastructure:",
-      skills_concepts: "Concepts:",
-      skills_concepts_v: "frontend, backend, CRUD, authentication, access levels, bug investigation",
+      coffee_why: "A university tech club I started and actively build, with the team.",
+      coffee_p1: "It exists to give students a lower-barrier, hands-on place to learn, build projects together and share what they know — outside the pressure of a graded room.",
+      coffee_p2: "I lead it where design and technology meet: the visual identity, the materials, how sessions are run, and how people are brought in.",
+      ph_logo: "logo &amp; identity — image pending",
+      ph_poster: "poster / session — image pending",
+      ph_social: "social piece — image pending",
 
-      creative_h: "Creative Work",
-      creative_p: "Graphic design, image manipulation, digital illustration, photography and visual experiments.",
-      creative_pieces_label: "Selected pieces:",
-      creative_link: "See the full Creative Collection &rarr;",
+      creative_h: "Creative work",
+      creative_intro: "Graphic design, image manipulation, digital illustration, photography and visual experiments. A selection — images are being prepared.",
+      cta_behance: "More visual work on Behance &rarr;",
 
-      community_h: "Community &amp; Social Impact",
-      community_p: "Initiatives around collaboration, volunteering, communication, events, social responsibility and collective building:",
-      community_1: "<strong>Diretoria da Mulher (PUCPR)</strong> &mdash; Events Coordinator",
-      community_2: "<strong>Teia do Bem</strong> &mdash; social media, communication and outreach",
-      community_3: "<strong>Interact</strong>, environmental actions, activities with children and other volunteer work",
+      community_h: "Community &amp; social impact",
+      community_lead: "Building with people — collaboration, volunteering, communication and events.",
+      ph_action: "selected photo — image pending",
+      ci_ddm: "Events Coordinator: organizing events and communication, and initiatives around inclusion and social impact.",
+      ci_teia: "Social media: communication and outreach for the project's actions.",
+      ci_vol_h: "Interact &amp; volunteer work",
+      ci_vol: "Environmental actions, activities with children and other volunteer work.",
+      privacy_note: "Photos are selected with care — no children's faces in sensitive contexts, no legible badges or personal data.",
 
-      beyond_h: "Beyond the Screen",
-      beyond_p: "Creative curiosity away from the computer, including cooking &mdash; breads, sweets, cookies and other experiments.",
+      currently_h: "Currently",
+      cur_role: "Software Development Intern",
+      cur_p: "Working on the development and maintenance of production software across frontend, backend, APIs and databases — implementing features, investigating bugs and integrating layers of existing systems.",
+      cur_note: "Due to the proprietary nature of the systems I work on, source code and internal materials are not publicly available.",
+      cur_study_h: "Study", cur_more_h: "More projects", cur_allrepos: "All repositories &rarr;",
 
-      more_h: "More on GitHub",
-      more_1: "cleaning and standardization of DATASUS data with pandas",
-      more_2: "ETL study: consolidates spreadsheets, extracts campaigns from UTM links, outputs CSV/XLSX",
-      more_3: "static site, a guide to bars in Curitiba (team)",
-      more_4: "&hellip;and other academic projects",
+      beyond_h: "Beyond the screen",
+      beyond_lead: "Things I like making away from a keyboard — mostly baking, some photography.",
+      ph_food: "bread — image pending", ph_photo: "photography — image pending",
 
       contact_h: "Contact",
-      contact_email: "Email:",
-      contact_email_edu: "Academic email:",
-      contact_drive: "Creative Collection folders",
-      footer_built: "built with HTML, CSS and JavaScript, hosted on GitHub Pages"
+      contact_line: "Open to build things with good people.",
+
+      foot_note: "Built by hand with HTML, CSS &amp; JavaScript. No framework.",
+      modal_todo: "Full image and a short note about this piece are being added."
     },
 
     pt: {
-      role: "Estudante de Engenharia de Software &amp; estagi&aacute;ria de desenvolvimento",
-      tagline: "Hub pessoal e portf&oacute;lio central &mdash; onde engenharia de software encontra design, criatividade, pessoas e impacto social.",
-      link_creative: "Cole&ccedil;&atilde;o Criativa",
-      link_contact: "Contato",
+      skip: "Pular para o conte&uacute;do",
+      nav_work: "Trabalhos", nav_coffee: "Coffee &amp; Code", nav_currently: "Atualmente", nav_contact: "Contato",
 
-      explore_h: "Explore o que eu fa&ccedil;o",
-      tile_tech: "TECH",
-      tile_creative: "CRIATIVO",
-      tile_community: "COMUNIDADE",
-      tile_community_sub: "Impacto social",
-      tile_coffee_sub: "Fundadora",
+      hero_kicker: "Portf&oacute;lio — feito &agrave; m&atilde;o",
+      hero_meta_build: "construindo entre c&oacute;digo, design &amp; pessoas",
 
-      about_h: "Sobre",
-      about_p: "Estudante de Engenharia de Software e estagi&aacute;ria de desenvolvimento. Trabalho na interse&ccedil;&atilde;o entre software, dados e design: construindo funcionalidades em produ&ccedil;&atilde;o e pipelines de ETL, substituindo processos manuais e sujeitos a erro por automa&ccedil;&atilde;o, e desenvolvendo aplica&ccedil;&otilde;es web e interativas &mdash; com base tamb&eacute;m em design visual e identidade digital.",
+      id_title: "CREATIVE ID",
+      id_name: "NOME", id_based: "ONDE", id_study: "ESTUDO", id_work: "TRABALHO",
+      id_work_v: "Estagi&aacute;ria de Desenvolvimento de Software",
+      id_builds: "CONSTR&Oacute;I",
+      id_builds_v: "software &middot; interfaces &middot; sistemas &middot; comunidades &middot; identidades visuais",
+      id_status: "aberta a construir coisas com gente boa",
 
-      education_h: "Forma&ccedil;&atilde;o",
-      education_p: "Estudante de Engenharia de Software &mdash; PUCPR.",
+      roles_h: "Fun&ccedil;&otilde;es atuais",
+      role_1: "Estudante de Engenharia de Software", role_1_sub: "PUCPR — base, sistemas, pr&aacute;tica",
+      role_2: "Estagi&aacute;ria de Desenvolvimento", role_2_sub: "software em produ&ccedil;&atilde;o, no dia a dia",
+      role_3: "Designer Visual &amp; Criativa", role_3_sub: "identidade, ilustra&ccedil;&atilde;o, imagem, fotografia",
+      role_4_sub: "fundadora &amp; l&iacute;der",
 
-      experience_h: "Experi&ecirc;ncia",
-      experience_role: "Estagi&aacute;ria de Desenvolvimento de Software &mdash; atualmente",
-      experience_p1: "Atuo no desenvolvimento e na manuten&ccedil;&atilde;o de software em produ&ccedil;&atilde;o, entre frontend, backend, APIs e bancos de dados: implementa&ccedil;&atilde;o de funcionalidades, investiga&ccedil;&atilde;o de bugs e integra&ccedil;&atilde;o entre diferentes camadas de sistemas existentes.",
-      experience_p2: "Por serem sistemas propriet&aacute;rios, o c&oacute;digo-fonte e os materiais internos n&atilde;o est&atilde;o dispon&iacute;veis publicamente.",
+      work_h: "Trabalhos selecionados",
+      work_intro: "Software, dados, um jogo, uma comunidade. Linguagens diferentes para o mesmo h&aacute;bito — fazer coisas.",
+      f_all: "Tudo", f_code: "C&oacute;digo", f_design: "Design", f_people: "Pessoas", f_play: "Jogo",
+      wk_datasus: "RPA + pandas + um dashboard para dados p&uacute;blicos de sa&uacute;de",
+      wk_game: "um joguinho 2D em Python / Pygame",
+      wk_pibble: "sistema de entregas em Django — projeto em equipe",
+      wk_coffee: "um clube universit&aacute;rio de tecnologia que criei e lidero",
+      wk_creative_t: "Galeria criativa", wk_creative: "ilustra&ccedil;&atilde;o, manipula&ccedil;&atilde;o de imagem, experimentos",
+      ph_identity: "identidade &amp; p&ocirc;steres — imagem pendente",
 
-      projects_h: "Projetos",
-      badge_team: "em equipe",
-      datasus_flow: "Dados p&uacute;blicos &rarr; automa&ccedil;&atilde;o &rarr; processamento &rarr; visualiza&ccedil;&atilde;o.",
-      datasus_p: "Extra&ccedil;&atilde;o automatizada (RPA / Selenium) de dados de hemoterapia do TabNet do DATASUS, com execu&ccedil;&atilde;o paralela, checkpoint, tratamento dos dados com pandas e um dashboard em Streamlit. Ideia do projeto e trabalho nos m&oacute;dulos de extra&ccedil;&atilde;o e tratamento.",
-      game_p: "Jogo individual em Python / Pygame: programa&ccedil;&atilde;o orientada a estados, f&iacute;sica de pulo, colis&otilde;es, dificuldade progressiva, HUD e tratamento de entrada. O c&oacute;digo do jogo &eacute; de autoria pr&oacute;pria; os assets visuais foram gerados por IA e s&atilde;o apresentados com transpar&ecirc;ncia.",
-      tag_gamedev: "game dev",
-      pibble_p: "Sistema Django de gest&atilde;o de entregas com autentica&ccedil;&atilde;o, n&iacute;veis de acesso, CRUD, API REST, modelos e frontend integrado. Minha contribui&ccedil;&atilde;o: o m&oacute;dulo de Funcion&aacute;rios e sua integra&ccedil;&atilde;o com Entregas, cadastro com CPF/CNPJ, o dashboard administrativo e padroniza&ccedil;&atilde;o de formul&aacute;rios / ajustes de interface.",
+      case_featured: "Caso t&eacute;cnico em destaque",
+      datasus_cap: "Dashboard em Streamlit sobre os dados consolidados.",
+      fl_processed: "dados tratados",
+      lbl_context: "Contexto", lbl_built: "O que constru&iacute;mos", lbl_role: "Meu papel",
+      datasus_context: "Os n&uacute;meros de hemoterapia do Paran&aacute; ficam no TabNet do DATASUS — uma interface p&uacute;blica lenta, uma consulta e um export por vez.",
+      datasus_built: "Um rob&ocirc; (Selenium) que roda as consultas e l&ecirc; as tabelas de resultado, uma camada em pandas que limpa e consolida cada per&iacute;odo, e um dashboard em Streamlit para comparar o volume entre meses e anos. Trabalho final de um curso de Python, com dois colegas.",
+      datasus_role: "Sugeri usar os dados de banco de sangue e trabalhei nos m&oacute;dulos de extra&ccedil;&atilde;o e tratamento. Colegas: Jackson Beggi e wingCODING (orquestra&ccedil;&atilde;o da RPA e dashboard).",
+      cta_source: "Ver o c&oacute;digo no GitHub &rarr;",
+
+      case_game: "Jogo — projeto individual",
+      corrida_cap: "Tela inicial. A arte &eacute; gerada por IA (nota abaixo).",
+      corrida_p1: "Um endless-runner 2D: o estudante est&aacute; atrasado para a aula e precisa desviar da cidade. Chegue a 1000 pontos para passar; perca tr&ecirc;s vidas e acabou.",
+      corrida_p2: "Feito em Python e Pygame — m&aacute;quina de estados limpa (menu / jogo / fim), f&iacute;sica de pulo com gravidade, obst&aacute;culos aleat&oacute;rios, dificuldade que sobe com a pontua&ccedil;&atilde;o, vidas com invencibilidade tempor&aacute;ria, um HUD e recorde salvo.",
+      corrida_note: "O c&oacute;digo &eacute; de autoria pr&oacute;pria. Os assets visuais s&atilde;o gerados por IA e mostrados com transpar&ecirc;ncia.",
+      tag_states: "m&aacute;quina de estados",
+
+      case_team: "Web — projeto em equipe",
+      pibble_p: "Um sistema de gest&atilde;o de entregas em Django: autentica&ccedil;&atilde;o, n&iacute;veis de acesso ADM/FUNC, CRUD de clientes, produtos, funcion&aacute;rios e entregas, uma API REST e frontend integrado. Feito com dois colegas.",
+      pibble_role_h: "Minha contribui&ccedil;&atilde;o",
+      pibble_r1: "M&oacute;dulo de Funcion&aacute;rios e sua integra&ccedil;&atilde;o com Entregas",
+      pibble_r2: "Cadastro aceitando CPF ou CNPJ (formul&aacute;rio + migra&ccedil;&atilde;o)",
+      pibble_r3: "Dashboard administrativo",
+      pibble_r4: "Padroniza&ccedil;&atilde;o de formul&aacute;rios e ajustes de interface",
       tag_auth: "autentica&ccedil;&atilde;o",
-      coffee_h: "Coffee &amp; Code &mdash; clube universit&aacute;rio de tecnologia",
-      coffee_p: "Clube universit&aacute;rio de tecnologia que criei e lidero, feito para dar aos estudantes um ambiente mais acess&iacute;vel, colaborativo e pr&aacute;tico para aprender, construir projetos e trocar conhecimento. Conecta tecnologia, educa&ccedil;&atilde;o, comunidade, lideran&ccedil;a, design e iniciativa.",
 
-      skills_h: "Habilidades T&eacute;cnicas",
-      skills_lang: "Linguagens:",
-      skills_web: "Web:",
-      skills_data: "Dados &amp; automa&ccedil;&atilde;o:",
-      skills_db: "Bancos de dados:",
-      skills_tools: "Ferramentas &amp; infraestrutura:",
-      skills_concepts: "Conceitos:",
-      skills_concepts_v: "frontend, backend, CRUD, autentica&ccedil;&atilde;o, n&iacute;veis de acesso, investiga&ccedil;&atilde;o de bugs",
+      coffee_why: "Um clube universit&aacute;rio de tecnologia que criei e construo ativamente, com a equipe.",
+      coffee_p1: "Existe para dar aos estudantes um espa&ccedil;o com menos barreira e mais pr&aacute;tica para aprender, construir projetos juntos e trocar o que sabem — fora da press&atilde;o da sala de aula.",
+      coffee_p2: "Lidero onde design e tecnologia se encontram: a identidade visual, os materiais, como os encontros acontecem e como as pessoas s&atilde;o convidadas.",
+      ph_logo: "logo &amp; identidade — imagem pendente",
+      ph_poster: "p&ocirc;ster / encontro — imagem pendente",
+      ph_social: "pe&ccedil;a de social — imagem pendente",
 
-      creative_h: "Trabalho Criativo",
-      creative_p: "Design gr&aacute;fico, manipula&ccedil;&atilde;o de imagem, ilustra&ccedil;&atilde;o digital, fotografia e experimenta&ccedil;&otilde;es visuais.",
-      creative_pieces_label: "Pe&ccedil;as selecionadas:",
-      creative_link: "Ver a Cole&ccedil;&atilde;o Criativa completa &rarr;",
+      creative_h: "Trabalho criativo",
+      creative_intro: "Design gr&aacute;fico, manipula&ccedil;&atilde;o de imagem, ilustra&ccedil;&atilde;o digital, fotografia e experimenta&ccedil;&otilde;es visuais. Uma sele&ccedil;&atilde;o — as imagens est&atilde;o sendo preparadas.",
+      cta_behance: "Mais trabalho visual no Behance &rarr;",
 
-      community_h: "Comunidade &amp; Impacto Social",
-      community_p: "Iniciativas de colabora&ccedil;&atilde;o, voluntariado, comunica&ccedil;&atilde;o, eventos, responsabilidade social e constru&ccedil;&atilde;o coletiva:",
-      community_1: "<strong>Diretoria da Mulher (PUCPR)</strong> &mdash; Coordenadora de Eventos",
-      community_2: "<strong>Teia do Bem</strong> &mdash; social media, comunica&ccedil;&atilde;o e divulga&ccedil;&atilde;o",
-      community_3: "<strong>Interact</strong>, a&ccedil;&otilde;es ambientais, a&ccedil;&otilde;es com crian&ccedil;as e outros voluntariados",
+      community_h: "Comunidade &amp; impacto social",
+      community_lead: "Construir com pessoas — colabora&ccedil;&atilde;o, voluntariado, comunica&ccedil;&atilde;o e eventos.",
+      ph_action: "foto selecionada — imagem pendente",
+      ci_ddm: "Coordenadora de Eventos: organiza&ccedil;&atilde;o de eventos e comunica&ccedil;&atilde;o, e iniciativas de inclus&atilde;o e impacto social.",
+      ci_teia: "Social media: comunica&ccedil;&atilde;o e divulga&ccedil;&atilde;o das a&ccedil;&otilde;es do projeto.",
+      ci_vol_h: "Interact &amp; voluntariado",
+      ci_vol: "A&ccedil;&otilde;es ambientais, atividades com crian&ccedil;as e outros voluntariados.",
+      privacy_note: "As fotos s&atilde;o escolhidas com cuidado — sem rostos de crian&ccedil;as em contexto sens&iacute;vel, sem crach&aacute;s leg&iacute;veis ou dados pessoais.",
 
-      beyond_h: "Al&eacute;m da Tela",
-      beyond_p: "Curiosidade criativa longe do computador, incluindo culin&aacute;ria &mdash; p&atilde;es, doces, cookies e outras cria&ccedil;&otilde;es.",
+      currently_h: "Atualmente",
+      cur_role: "Estagi&aacute;ria de Desenvolvimento de Software",
+      cur_p: "Atuo no desenvolvimento e na manuten&ccedil;&atilde;o de software em produ&ccedil;&atilde;o, entre frontend, backend, APIs e bancos de dados — implementa&ccedil;&atilde;o de funcionalidades, investiga&ccedil;&atilde;o de bugs e integra&ccedil;&atilde;o de camadas de sistemas existentes.",
+      cur_note: "Por serem sistemas propriet&aacute;rios, o c&oacute;digo-fonte e os materiais internos n&atilde;o est&atilde;o dispon&iacute;veis publicamente.",
+      cur_study_h: "Estudo", cur_more_h: "Mais projetos", cur_allrepos: "Todos os reposit&oacute;rios &rarr;",
 
-      more_h: "Mais no GitHub",
-      more_1: "limpeza e padroniza&ccedil;&atilde;o de dados do DATASUS com pandas",
-      more_2: "estudo de ETL: consolida planilhas, extrai a campanha de links UTM, gera CSV/XLSX",
-      more_3: "site est&aacute;tico, um guia de bares de Curitiba (em equipe)",
-      more_4: "&hellip;e outros projetos acad&ecirc;micos",
+      beyond_h: "Al&eacute;m da tela",
+      beyond_lead: "Coisas que gosto de fazer longe do teclado — principalmente confeitaria, um pouco de fotografia.",
+      ph_food: "p&atilde;o — imagem pendente", ph_photo: "fotografia — imagem pendente",
 
       contact_h: "Contato",
-      contact_email: "E-mail:",
-      contact_email_edu: "E-mail institucional:",
-      contact_drive: "Pastas da Cole&ccedil;&atilde;o Criativa",
-      footer_built: "feito com HTML, CSS e JavaScript, hospedado no GitHub Pages"
+      contact_line: "Aberta a construir coisas com gente boa.",
+
+      foot_note: "Feito &agrave; m&atilde;o com HTML, CSS &amp; JavaScript. Sem framework.",
+      modal_todo: "A imagem completa e uma nota curta sobre a pe&ccedil;a est&atilde;o sendo adicionadas."
     }
   };
 
-  function apply(lang) {
+  function applyLang(lang) {
     var dict = I18N[lang] || I18N.en;
     document.documentElement.lang = (lang === "pt") ? "pt-BR" : "en";
     document.querySelectorAll("[data-i18n]").forEach(function (el) {
-      var key = el.getAttribute("data-i18n");
-      if (dict[key] != null) el.innerHTML = dict[key];
+      var k = el.getAttribute("data-i18n");
+      if (dict[k] != null) el.innerHTML = dict[k];
     });
-    var btn = document.getElementById("lang-toggle");
-    if (btn) {
-      btn.textContent = (lang === "pt") ? "EN" : "PT";
-      btn.setAttribute("aria-label", (lang === "pt") ? "Switch to English" : "Mudar para português");
-    }
+    var btn = document.getElementById("lang");
+    if (btn) { btn.textContent = (lang === "pt") ? "EN" : "PT"; }
     try { localStorage.setItem("lang", lang); } catch (e) {}
   }
 
   function initialLang() {
-    try {
-      var saved = localStorage.getItem("lang");
-      if (saved === "pt" || saved === "en") return saved;
-    } catch (e) {}
-    var nav = (navigator.language || navigator.userLanguage || "en").toLowerCase();
-    return nav.indexOf("pt") === 0 ? "pt" : "en";
+    try { var s = localStorage.getItem("lang"); if (s === "pt" || s === "en") return s; } catch (e) {}
+    return /^pt\b/i.test(navigator.language || "") ? "pt" : "en";
+  }
+
+  /* ---------- work filters ---------- */
+  function initFilters() {
+    var chips = document.querySelectorAll(".filters .chip");
+    var items = document.querySelectorAll(".work__grid .wk");
+    if (!chips.length) return;
+    chips.forEach(function (chip) {
+      chip.addEventListener("click", function () {
+        var f = chip.getAttribute("data-filter");
+        chips.forEach(function (c) { c.classList.toggle("is-on", c === chip); c.setAttribute("aria-pressed", c === chip); });
+        items.forEach(function (it) {
+          it.hidden = !(f === "all" || it.getAttribute("data-kind") === f);
+        });
+      });
+    });
+  }
+
+  /* ---------- artwork modal ---------- */
+  function initModal() {
+    var modal = document.getElementById("modal");
+    if (!modal) return;
+    var box = modal.querySelector(".modal__box");
+    var closeBtn = document.getElementById("modal-close");
+    var titleEl = document.getElementById("modal-title");
+    var catEl = document.getElementById("modal-cat");
+    var phEl = document.getElementById("modal-ph");
+    var lastFocus = null;
+
+    function open(btn) {
+      lastFocus = btn;
+      titleEl.textContent = btn.getAttribute("data-title") || "";
+      catEl.textContent = btn.getAttribute("data-cat") || "";
+      phEl.textContent = btn.getAttribute("data-title") || "";
+      modal.hidden = false;
+      document.body.style.overflow = "hidden";
+      closeBtn.focus();
+      document.addEventListener("keydown", onKey);
+    }
+    function close() {
+      modal.hidden = true;
+      document.body.style.overflow = "";
+      document.removeEventListener("keydown", onKey);
+      if (lastFocus) lastFocus.focus();
+    }
+    function onKey(e) {
+      if (e.key === "Escape") { close(); return; }
+      if (e.key === "Tab") {
+        var f = box.querySelectorAll("button, a[href]");
+        if (!f.length) return;
+        var first = f[0], last = f[f.length - 1];
+        if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+        else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+      }
+    }
+    document.querySelectorAll(".art").forEach(function (b) {
+      b.addEventListener("click", function () { open(b); });
+    });
+    closeBtn.addEventListener("click", close);
+    modal.addEventListener("click", function (e) { if (e.target === modal) close(); });
   }
 
   document.addEventListener("DOMContentLoaded", function () {
     var y = document.getElementById("year");
     if (y) y.textContent = new Date().getFullYear();
 
-    var lang = initialLang();
-    apply(lang);
+    applyLang(initialLang());
+    var btn = document.getElementById("lang");
+    if (btn) btn.addEventListener("click", function () {
+      applyLang(document.documentElement.lang === "pt-BR" ? "en" : "pt");
+    });
 
-    var btn = document.getElementById("lang-toggle");
-    if (btn) {
-      btn.addEventListener("click", function () {
-        lang = (document.documentElement.lang === "pt-BR") ? "en" : "pt";
-        apply(lang);
-      });
-    }
+    initFilters();
+    initModal();
   });
 })();
