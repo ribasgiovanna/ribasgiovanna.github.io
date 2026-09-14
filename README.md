@@ -13,10 +13,12 @@ to finally see the work.
 
 Plain **HTML + CSS + JavaScript**. No framework, no build step. Hosted on GitHub Pages.
 
-- `Fraunces` (display serif) + `Inter` (body) + system monospace (labels), via Google Fonts
+- `Fraunces` (display serif) + `Inter` (body) + system monospace (labels), via Google Fonts.
+  `Caveat` and `DM Mono`/`DM Sans` are loaded only for the Archive component below.
 - Light/dark aware (`prefers-color-scheme`), responsive down to 320px
-- EN/PT language toggle (see below), accessible modal, work filters
+- EN/PT language toggle (see below), accessible modals, gallery filters
 - Semantic HTML, skip link, visible focus, `prefers-reduced-motion` respected
+- `loading="lazy"` + `decoding="async"` on every image below the first viewport
 
 ## Structure
 
@@ -24,18 +26,22 @@ Plain **HTML + CSS + JavaScript**. No framework, no build step. Hosted on GitHub
 .
 ├── index.html            # all content
 ├── style.css             # editorial system: tokens, layout, sections
-├── script.js             # i18n dictionary, work filters, artwork modal, year
+├── script.js             # i18n dictionary, filters, modals, scroll-linked story line
+├── gr-archive.html-in-index / gr-archive.css / gr-archive.js
+│                         # the "Archive" folder component (Projects / Technologies /
+│                         # Learning) — a literal, self-contained widget; its own
+│                         # LIBRARY of project/cert copy lives inside gr-archive.js
 ├── 404.html
-├── ASSETS_NEEDED.md      # real images still to add (placeholders on the page)
 └── assets/
     ├── images/
-    │   ├── profile/      # flower-avatar.png (illustration); portrait optional
-    │   ├── tech/         # real project screenshots (webp)
-    │   ├── creative/     # gallery — pending
-    │   ├── coffee-code/  # identity/posters — pending
-    │   ├── community/    # event photos — pending
-    │   └── beyond/       # baking / photography — pending
-    └── og/               # og.png share image
+    │   ├── profile/      # ID card photo
+    │   ├── about/        # About section portrait + sticker cutouts for the story line
+    │   ├── tech/          # real project screenshots (webp)
+    │   ├── certs/         # certificate/education scans used inside the Archive
+    │   ├── coffee-code/   # club poster
+    │   ├── community/     # real event photos + certificates for Community & Events
+    │   └── playground/    # design / illustration / photography / food, by category
+    └── og/                # og.png share image
 ```
 
 ## Editing content
@@ -43,8 +49,11 @@ Plain **HTML + CSS + JavaScript**. No framework, no build step. Hosted on GitHub
 - English text lives in `index.html`. Every translatable node has `data-i18n="key"`.
 - Both languages live in the `I18N = { en, pt }` object in `script.js`. Keep the two
   halves in sync **per key** — that's the only rule that keeps the toggle from drifting.
-- To add a real image, replace the matching `.frame` / `.wk__img--flat` / `.art__frame`
-  placeholder in `index.html` with an `<img>` (see `ASSETS_NEEDED.md` for names/sizes).
+- The Archive folder's own copy (project/tech/learning entries) lives separately, in
+  the bilingual `LIBRARY` object inside `gr-archive.js`, not in `script.js`'s `I18N`.
+- To add a real image, drop the file into the matching `assets/images/...` folder and
+  reference it directly with an `<img>` (Archive images are indirected through the
+  `#gr-archive-assets` JSON block and referenced by key from `gr-archive.js`).
 
 ## Run locally
 
@@ -64,8 +73,10 @@ Push to `main`. GitHub Pages serves the repo root. Verify at the live URL after 
   internal materials. Professional experience is described at the level of competence only.
 - The game *Corrida para a Faculdade*: the code is Giovanna's; its visual assets are
   AI-generated and labelled as such on the site.
-- Team projects (DATASUS, Pibble Express, Curitibars) credit collaborators and state
-  Giovanna's specific contribution.
+- Team projects (DATASUS, Pibble Express, Clínica Veterinária) credit collaborators and
+  state Giovanna's specific contribution.
+- Community photos are chosen with care — no children's faces in sensitive contexts, no
+  legible badges or personal data.
 
 ## Credits
 

@@ -1,73 +1,54 @@
-# Assets needed
+# Asset status
 
-Real images to replace the placeholder frames on the site. Drop files into the
-folders below using the given names, then wire them into `index.html` (each
-placeholder is marked with `image pending` / `image-pending` text).
+All sections currently show real photos/screenshots — there are no placeholder
+frames left on the page. This file is now a short reference for where things live
+and what's unused, not a to-do list.
 
-**Format:** export as **WebP** (quality ~80–85) when possible; PNG is fine for
-screenshots, JPG acceptable for photos. Keep the longest edge around the size
-noted. Add `loading="lazy"` for anything below the first screen. Always set
-`width`/`height` on the `<img>`.
+**Format:** WebP, quality ~80–85. `loading="lazy" decoding="async"` on everything
+below the first viewport (the Home hero photo is the only exception). `width`/`height`
+set on every `<img>`.
 
-**Do not include:** children's faces in sensitive contexts, legible badges/name
-tags, documents, personal data, or anything that needs someone's permission.
+**Never include:** children's faces in sensitive contexts, legible badges/name tags,
+documents with personal data, or anything that needs someone's permission.
 
 ---
 
-## `assets/images/profile/`
-| file | use | orientation | size | notes |
-|---|---|---|---|---|
-| `portrait.webp` | optional editorial portrait for the hero, replacing the flower crop | portrait | ~1200×1500 | rectangular crop, not a circular avatar |
+## In use
 
-`flower-avatar.png` is already in place (an illustration used as the profile image).
+- `assets/images/profile/id-photo.webp` — Home ID card photo.
+- `assets/images/about/portrait.webp` — the single About-section photo. `harve.webp`
+  is used as an Archive peek image.
+- `assets/images/tech/` — real project screenshots for the Archive (DATASUS dashboard,
+  Pibble Express, IoT/BPMN diagrams, game art).
+- `assets/images/certs/` — the 3 certificate scans still shown inside the Archive's
+  Learning folder (FICEM, DIO, Scrum+Kanban workshop).
+- `assets/images/coffee-code/poster.webp` — the only Coffee & Code image in use.
+- `assets/images/community/` — one photo/certificate per entry in the Community
+  catalog grid (13 entries: Meiwa, Bom Jesus, Hospital Pequeno Príncipe, Interact Club,
+  Diretoria da Mulher, blood donation, Borboleta Menarca, Vozes Femininas, Literatura
+  com Elas, Teia do Bem, DCE + Identidade PUCPR, the Lei Maria da Penha panel, Maker
+  Faire Curitiba) — click a thumbnail to open its detail card. `interact-2.webp`
+  through `interact-5.webp` are the 4 extra Interact Club photos from the previous
+  click-through-gallery version of that one card; kept, not referenced now that the
+  section is a compact grid with one photo per entry.
+- `assets/images/playground/` — design, illustration, photography and food pieces,
+  filtered by category on the page.
 
-## `assets/images/creative/` — Creative gallery (section 07)
-One image per piece. The gallery layout expects a mix of sizes.
-| file | piece | orientation | size |
-|---|---|---|---|
-| `reaching.webp` | REACHING | landscape | ~1800px wide |
-| `moments.webp` | MOMENTS | square-ish | ~1400px |
-| `what-remains.webp` | WHAT REMAINS | portrait | ~1400px tall |
-| `flower.webp` | flower | square-ish | ~1400px |
-| `my-love-2.webp` | My love 2.0 | landscape | ~1600px |
-| `9to5.webp` | 9to5 | landscape | ~1800px wide |
-| `run.webp` | RUN | landscape | ~1600px |
+## Present but unused
 
-Optional per piece, for the modal: 1–3 detail crops (`reaching-detail-1.webp`, …)
-and a one or two sentence note about the concept (send as text; nothing is invented
-on the site until you provide it).
-
-## `assets/images/coffee-code/` — Coffee & Code (section 06)
-| file | use | orientation | size |
-|---|---|---|---|
-| `identity.webp` | logo / visual identity board | landscape | ~1600px |
-| `poster.webp` | a real poster or session photo | portrait or landscape | ~1400px |
-| `social.webp` | a social-media piece | square | ~1200px |
-
-## `assets/images/community/` — Community & social impact (section 08)
-| file | use | orientation | size |
-|---|---|---|---|
-| `ddm.webp` | Diretoria da Mulher — one strong photo of an action/event | landscape | ~1600px |
-| `teia-do-bem.webp` | Teia do Bem — one photo | landscape or square | ~1400px |
-| `volunteer.webp` | Interact / environmental / volunteer work | landscape | ~1600px |
-
-## `assets/images/beyond/` — Beyond the screen (section 10)
-| file | use | orientation | size |
-|---|---|---|---|
-| `bread.webp` | a loaf | portrait | ~1200px |
-| `cookies.webp` | cookies | square | ~1200px |
-| `dessert.webp` | a dessert | square | ~1200px |
-| `photography.webp` | one photograph you like | landscape | ~1800px wide |
+- `assets/images/about/aquarium.webp`, `bouquet.webp`, `snow.webp`, `talk.webp`,
+  `team.webp`, `oab.webp`, `shore.webp`, `dce.webp` — real photos of Giovanna, kept
+  from an earlier multi-photo version of the About section (now a single portrait).
+  Not deleted since they're personal photos, not dead code — ask before removing.
+- `assets/images/playground/volunteering/` (4 photos) — from an earlier "volunteering"
+  gallery category that no longer exists as a filter; not currently shown anywhere.
+- `assets/images/certs/cert-hotmilk.webp`, `cert-met.webp`, `cert-vgc.webp` — the two
+  language certificates (MET, VGC Winter Camp) and the HOTMILK talk were dropped from
+  the Archive's Learning folder to keep it to 5 records; files kept, not referenced.
+- `assets/images/playground/design/my-love.webp`, `time-is-ticking.webp`, `run.webp`,
+  `childhoodhaul.webp` — real design pieces, trimmed from the Outside the IDE gallery
+  to keep the design category tighter (the rest live on Behance); files kept.
 
 ## `assets/og/`
-| file | use | size |
-|---|---|---|
-| `og.png` | social share image (link previews) | 1200×630 | a generated version is committed; replace with a designed one if you want |
-
----
-
-## Already in place (real assets)
-- `assets/images/tech/datasus-dashboard.webp` — real Streamlit dashboard
-- `assets/images/tech/health-data-before-after.webp`, `netflix-before-after.webp` — real data before/after
-- `assets/images/tech/pibble-dashboard.webp`, `pibble-funcionarios.webp` — real app screenshots
-- `assets/images/tech/game-start-screen.webp`, `game-win-screen.webp` — real game art (AI-generated, noted on the site)
+`og.png` — social share image (1200×630), a generated placeholder. Replace with a
+designed one if wanted.
