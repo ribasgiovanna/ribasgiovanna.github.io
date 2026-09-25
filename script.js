@@ -244,7 +244,7 @@
 
       now_h: "Currently",
       story_p1: "I&rsquo;ve had an ease with the digital world since I was little. In 2020 that curiosity found a direction in illustration &mdash; I consumed references, published my drawings, and thought about concept art for games. The pressure to keep improving eventually cost me the joy of it, and I stepped back for a while.",
-      story_p2: "I found a lighter way to create in graphic and digital design, mostly for school presentations &mdash; which led to FICEM 2024, where I proposed and helped produce a project on the science of dreams. At the same time, another drive stayed with me: the friction I kept running into in the software I used, and the wish to understand and fix it myself.",
+      story_p2: "Graphic design became my way to keep creating without the same pressure and self-criticism: composition, color, typography, posters. And it was by using those tools every day that something else came up: frustration with software that got in the way more than it helped, and the wish to understand why &mdash; and what it would take to build one myself.",
       story_p3: "In 2025 I had my first contact with programming, through Java. The following year I continued with Python at Escola de Tecnologia Harve and started Software Engineering at PUCPR &mdash; bringing the attention to form and communication I built through drawing and design into how I build software today.",
 
       work_h: "Archive",
@@ -586,7 +586,7 @@
 
       now_h: "Atualmente",
       story_p1: "Desde pequena, tive facilidade com o mundo digital. Em 2020, essa curiosidade ganhou uma dire&ccedil;&atilde;o na ilustra&ccedil;&atilde;o — consumia refer&ecirc;ncias, publicava meus desenhos e pensava em arte conceitual para jogos. A press&atilde;o para melhorar acabou custando o prazer de desenhar, e dei um passo atr&aacute;s por um tempo.",
-      story_p2: "Encontrei uma forma mais leve de criar no design gr&aacute;fico e digital, principalmente em apresenta&ccedil;&otilde;es escolares — o que me levou &agrave; FICEM 2024, onde propus e ajudei a produzir um trabalho sobre a ci&ecirc;ncia dos sonhos. Ao mesmo tempo, outra vontade continuava presente: o inc&ocirc;modo com dificuldades nos softwares que usava, e a vontade de entender e resolver isso por conta pr&oacute;pria.",
+      story_p2: "O design gr&aacute;fico virou o jeito de continuar criando sem a mesma press&atilde;o e autocobran&ccedil;a: composi&ccedil;&atilde;o, cor, tipografia, p&ocirc;steres. E foi usando essas ferramentas todo dia que surgiu outra coisa: o inc&ocirc;modo com programas que atrapalhavam mais do que ajudavam, e a vontade de entender por qu&ecirc; &mdash; e como seria construir um.",
       story_p3: "Em 2025 tive meu primeiro contato com programa&ccedil;&atilde;o, atrav&eacute;s de Java. No ano seguinte, continuei com Python na Escola de Tecnologia Harve e comecei Engenharia de Software na PUCPR — trazendo para a forma como construo software hoje a aten&ccedil;&atilde;o &agrave; forma e &agrave; comunica&ccedil;&atilde;o que desenvolvi atrav&eacute;s do desenho e do design.",
       work_h: "Arquivo",
       work_intro: "Software, dados, um jogo, uma comunidade. Linguagens diferentes para o mesmo h&aacute;bito — fazer coisas.",
