@@ -35,6 +35,8 @@ documents with personal data, or anything that needs someone's permission.
   shown as a second thumbnail on those two event cards (via `data-images`).
   `ddm-diretorias-em-acao.webp` (the Diretorias joint-meeting post, cropped from
   the public Instagram story) is the second photo on the Diretoria da Mulher card.
+  `vozes-femininas-poster.webp` (the talk's poster) and `dce-sala.webp` (the room
+  before the DCE + Identidade gathering) are second photos on those two event cards.
 - `assets/images/playground/` — design, illustration, photography and food pieces,
   filtered by category on the page.
 
