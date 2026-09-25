@@ -37,6 +37,9 @@ documents with personal data, or anything that needs someone's permission.
   the public Instagram story) is the second photo on the Diretoria da Mulher card.
   `vozes-femininas-poster.webp` (the talk's poster) and `dce-sala.webp` (the room
   before the DCE + Identidade gathering) are second photos on those two event cards.
+  `vozes-femininas.webp` and `literatura.webp` are clean renders of the organizer
+  certificates (they replaced earlier phone scans); `cert-ddm.webp` is the
+  Diretoria da Mulher 2026-1 certificate, third photo on that card.
 - `assets/images/playground/` — design, illustration, photography and food pieces,
   filtered by category on the page.
 
