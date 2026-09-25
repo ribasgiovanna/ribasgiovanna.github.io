@@ -654,9 +654,9 @@ p:last-child { margin-bottom: 0; }
 
 /* project cards share one frame: same size, border, rounded corners and tilt
    whether they show a screenshot, the Make a Pause card or a text record.
-   Screenshots fill the whole frame (click still opens the full image) and
-   keep their caption on a strip along the bottom edge. Certificates in the
-   Learning folder are left as they were so they are never cropped. */
+   Screenshots fill the whole frame with no caption (click still opens the
+   full image). Certificates in the Learning folder are left as they were so
+   they are never cropped. */
 .folders__set #gr-archive .gr-card {
   box-sizing: border-box; width: 100%; height: auto; aspect-ratio: 16 / 10; min-height: 0; margin: 0;
   border: 1px solid #ac9d85; border-radius: var(--radius-card-sm);
@@ -664,11 +664,7 @@ p:last-child { margin-bottom: 0; }
 }
 .folders__set #gr-archive .gr-card.gr-sheet-image { position: relative; padding: 0; background: #eee6d3; }
 .folders__set #gr-archive .gr-card.gr-sheet-image img { width: 100%; height: 100%; object-fit: cover; }
-.folders__set #gr-archive .gr-card.gr-sheet-image figcaption {
-  left: 0; right: 0; bottom: 0; padding: 3px 14px 4px;
-  background: color-mix(in srgb, #fbf7ed 90%, transparent); border-top: 1px solid #ac9d8566;
-}
-.folders__set #gr-archive .gr-card.gr-sheet-image figcaption:empty { display: none; }
+.folders__set #gr-archive .gr-card.gr-sheet-image figcaption { display: none; }
 @media (max-width: 540px) {
   .folders__set #gr-archive .gr-card { max-width: 340px; margin: 0 auto; transform: rotate(-1deg); }
   .folders__set #gr-archive .gr-card.gr-sheet-image img { height: 100%; }
