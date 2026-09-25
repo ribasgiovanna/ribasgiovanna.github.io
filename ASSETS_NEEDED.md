@@ -18,7 +18,7 @@ documents with personal data, or anything that needs someone's permission.
 - `assets/images/profile/id-photo.webp` — Home ID card photo.
 - `assets/images/about/portrait.webp` — the single About-section photo. `harve.webp`
   is used as an Archive peek image.
-- `assets/images/tech/` — real project screenshots and art for the Archive (incl. `cobot.webp`, the Cobot mascot) (DATASUS dashboard,
+- `assets/images/tech/` — real project screenshots and art for the Archive (incl. `cobot.webp`, the Cobot mascot, and `adversia-home.webp`, the AdversIA home screen from its public repo). Project cards crop screenshots to one shared frame; an item's `focus` sets the crop anchor (DATASUS dashboard,
   Pibble Express, IoT/BPMN diagrams, game art).
 - `assets/images/certs/` — the 3 certificate scans still shown inside the Archive's
   Learning folder (FICEM, DIO, Scrum+Kanban workshop).
