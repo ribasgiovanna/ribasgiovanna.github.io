@@ -636,15 +636,20 @@ p:last-child { margin-bottom: 0; }
 .folders__set #gr-archive .gr-sheet-image img:hover { transform: scale(1.02); }
 @media (max-width: 540px) {
   .folders__set #gr-archive .gr-sheet-image img { height: 220px; }
-  /* on phones the reader was a fixed-height absolute box (stage 520px) and the
-     enlarged image + longer descriptions didn't fit: the sheet overflowed over
-     the top bar and under the pager ("View repository" on top of "Previous").
-     While reading, let the reader sit in flow and grow with its content; the
-     folders behind it are hidden so they don't poke out below a short sheet. */
+}
+/* up to tablet width the reader was a fixed-height absolute box and the
+   enlarged image + longer descriptions didn't fit: the sheet overflowed over
+   the top bar and under the pager ("View repository" on top of "Previous").
+   While reading, let the reader sit in flow and grow with its content; the
+   folders behind it are hidden so they don't poke out below a short sheet.
+   The two-column sheet is also too narrow here, so it stacks. */
+@media (max-width: 900px) {
   .folders__set #gr-archive[data-reading="true"] .gr-stage { height: auto; }
   .folders__set #gr-archive[data-reading="true"] .gr-folder { visibility: hidden; }
   .folders__set #gr-archive .gr-reader { position: relative; inset: auto; margin: 12px 1% 8px; }
   .folders__set #gr-archive .gr-sheet { justify-content: flex-start; }
+  .folders__set #gr-archive .gr-sheet-layout { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+  .folders__set #gr-archive .gr-card { max-width: 380px; margin: 0 auto; }
 }
 
 /* project cards share one frame: same size, border, rounded corners and tilt
@@ -653,7 +658,7 @@ p:last-child { margin-bottom: 0; }
    keep their caption on a strip along the bottom edge. Certificates in the
    Learning folder are left as they were so they are never cropped. */
 .folders__set #gr-archive .gr-card {
-  box-sizing: border-box; width: 100%; height: 260px; min-height: 0; margin: 0;
+  box-sizing: border-box; width: 100%; height: auto; aspect-ratio: 16 / 10; min-height: 0; margin: 0;
   border: 1px solid #ac9d85; border-radius: var(--radius-card-sm);
   box-shadow: var(--glass-shadow-sm); transform: rotate(-2deg); overflow: hidden;
 }
@@ -665,7 +670,7 @@ p:last-child { margin-bottom: 0; }
 }
 .folders__set #gr-archive .gr-card.gr-sheet-image figcaption:empty { display: none; }
 @media (max-width: 540px) {
-  .folders__set #gr-archive .gr-card { height: 190px; max-width: 320px; margin: 0 auto; transform: rotate(-1deg); }
+  .folders__set #gr-archive .gr-card { max-width: 340px; margin: 0 auto; transform: rotate(-1deg); }
   .folders__set #gr-archive .gr-card.gr-sheet-image img { height: 100%; }
 }
 
