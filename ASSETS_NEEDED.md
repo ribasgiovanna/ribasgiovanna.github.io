@@ -18,7 +18,7 @@ documents with personal data, or anything that needs someone's permission.
 - `assets/images/profile/id-photo.webp` — Home ID card photo.
 - `assets/images/about/portrait.webp` — the single About-section photo. `harve.webp`
   is used as an Archive peek image.
-- `assets/images/tech/` — real project screenshots for the Archive (DATASUS dashboard,
+- `assets/images/tech/` — real project screenshots and art for the Archive (incl. `cobot.webp`, the Cobot mascot) (DATASUS dashboard,
   Pibble Express, IoT/BPMN diagrams, game art).
 - `assets/images/certs/` — the 3 certificate scans still shown inside the Archive's
   Learning folder (FICEM, DIO, Scrum+Kanban workshop).
@@ -33,6 +33,8 @@ documents with personal data, or anything that needs someone's permission.
   section is a compact grid with one photo per entry.
   `cert-maria-penha.webp` and `cert-hackathon.webp` are the OAB/PR certificates,
   shown as a second thumbnail on those two event cards (via `data-images`).
+  `ddm-diretorias-em-acao.webp` (the Diretorias joint-meeting post, cropped from
+  the public Instagram story) is the second photo on the Diretoria da Mulher card.
 - `assets/images/playground/` — design, illustration, photography and food pieces,
   filtered by category on the page.
 
