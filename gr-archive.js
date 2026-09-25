@@ -63,13 +63,13 @@ document.addEventListener("DOMContentLoaded", () => {
       tech:{label:'Tecnologias · ferramentas em uso',items:[
         {title:'Dados e automação',type:'Coleta, tratamento & RPA',description:'Ferramentas que uso para coletar, tratar e apresentar dados, e para automatizar tarefas repetitivas.',tools:['Python','pandas','openpyxl','Selenium','Playwright','BeautifulSoup','Streamlit','Excel'],url:'https://github.com/ribasgiovanna/datasus',link:'Ver aplicação no projeto'},
         {title:'Back-end & APIs',type:'Serviços & regras de negócio',description:'APIs, autenticação e acesso a dados, no estágio e nos projetos acadêmicos.',tools:['FastAPI','Pydantic','SQLAlchemy','Alembic','Django','Django REST Framework','Node.js','Express','Prisma'],url:'https://github.com/ribasgiovanna/pibble_express',link:'Ver aplicação no projeto'},
-        {title:'Front-end',type:'Interfaces web',description:'Construção de interfaces, formulários e painéis.',tools:['HTML + CSS','JavaScript','TypeScript','React','Next.js','Vite','Tailwind CSS','Radix UI']},
-        {title:'Bancos de dados',type:'Consulta & organização',description:'Bancos relacionais e não relacionais com que trabalho no dia a dia.',tools:['SQL','SQL Server','PostgreSQL','MongoDB','Redis','SQLite','SSMS']},
+        {title:'Front-end',type:'Interfaces web',description:'Construção de interfaces, formulários e painéis.',tools:['HTML + CSS','JavaScript','TypeScript','React','Next.js']},
+        {title:'Bancos de dados',type:'Consulta & organização',description:'Bancos relacionais e não relacionais com que trabalho no dia a dia.',tools:['SQL','SQL Server','PostgreSQL','MongoDB','SQLite','SSMS']},
         {title:'IA & integrações',type:'LLMs & agentes',description:'Integração de modelos de linguagem em aplicações e ferramentas.',tools:['Claude API','OpenAI API','MCP'],url:'https://adversia.vercel.app',link:'Ver aplicação na AdversIA'},
         {title:'Testes',type:'Qualidade',description:'Testes automatizados de back-end, front-end e ponta a ponta.',tools:['pytest','Jest','Vitest','Testing Library','Playwright']},
         {title:'Deploy & ambiente',type:'Infraestrutura & SO',description:'Containers, integração contínua e o ambiente em que desenvolvo.',tools:['Docker','Docker Compose','GitHub Actions','Nginx','Oracle Cloud','Ubuntu','PowerShell']},
         {title:'Desenvolver e organizar',type:'Código & processos',description:'Versionamento, edição de código e modelagem de processos de negócio.',tools:['Git','GitHub','VS Code','Bizagi Modeler']},
-        {title:'Criação visual',type:'Design gráfico & ilustração',description:'Composição de pôsteres, tratamento de imagens, ilustração e materiais de comunicação.',tools:['Affinity','Photoshop','Procreate','Canva'],url:'https://www.behance.net/ribestudio',link:'Ver design gráfico no Behance'}
+        {title:'Criação visual',type:'Design gráfico & ilustração',description:'Composição de pôsteres, tratamento de imagens, ilustração e materiais de comunicação.',tools:['Figma','Affinity','Photoshop','Procreate','Canva'],url:'https://www.behance.net/ribestudio',link:'Ver design gráfico no Behance'}
       ]},
       certs:{label:'Aprendizado & formação · registros',items:[
         {title:'Engenharia de Software',type:'PUCPR · iniciada em 2026',description:'Graduação em andamento, em Curitiba.',record:'PUCPR',recordSub:'FORMAÇÃO ACADÊMICA',recordBottom:'Em andamento'},
@@ -94,13 +94,13 @@ document.addEventListener("DOMContentLoaded", () => {
       tech:{label:'Technologies · tools in use',items:[
         {title:'Data & automation',type:'Collection, cleaning & RPA',description:'Tools I use to collect, clean and present data, and to automate repetitive work.',tools:['Python','pandas','openpyxl','Selenium','Playwright','BeautifulSoup','Streamlit','Excel'],url:'https://github.com/ribasgiovanna/datasus',link:'See it applied in the project'},
         {title:'Back-end & APIs',type:'Services & business logic',description:'APIs, authentication and data access, at my internship and in academic projects.',tools:['FastAPI','Pydantic','SQLAlchemy','Alembic','Django','Django REST Framework','Node.js','Express','Prisma'],url:'https://github.com/ribasgiovanna/pibble_express',link:'See it applied in the project'},
-        {title:'Front-end',type:'Web interfaces',description:'Building interfaces, forms and dashboards.',tools:['HTML + CSS','JavaScript','TypeScript','React','Next.js','Vite','Tailwind CSS','Radix UI']},
-        {title:'Databases',type:'Querying & organization',description:'Relational and non-relational databases I work with day to day.',tools:['SQL','SQL Server','PostgreSQL','MongoDB','Redis','SQLite','SSMS']},
+        {title:'Front-end',type:'Web interfaces',description:'Building interfaces, forms and dashboards.',tools:['HTML + CSS','JavaScript','TypeScript','React','Next.js']},
+        {title:'Databases',type:'Querying & organization',description:'Relational and non-relational databases I work with day to day.',tools:['SQL','SQL Server','PostgreSQL','MongoDB','SQLite','SSMS']},
         {title:'AI & integrations',type:'LLMs & agents',description:'Bringing language models into applications and tools.',tools:['Claude API','OpenAI API','MCP'],url:'https://adversia.vercel.app',link:'See it applied in AdversIA'},
         {title:'Testing',type:'Quality',description:'Automated back-end, front-end and end-to-end tests.',tools:['pytest','Jest','Vitest','Testing Library','Playwright']},
         {title:'Deploy & environment',type:'Infrastructure & OS',description:'Containers, continuous integration and the environment I develop in.',tools:['Docker','Docker Compose','GitHub Actions','Nginx','Oracle Cloud','Ubuntu','PowerShell']},
         {title:'Building & organizing',type:'Code & processes',description:'Version control, code editing and business-process modeling.',tools:['Git','GitHub','VS Code','Bizagi Modeler']},
-        {title:'Visual creation',type:'Graphic design & illustration',description:'Poster composition, image treatment, illustration and communication materials.',tools:['Affinity','Photoshop','Procreate','Canva'],url:'https://www.behance.net/ribestudio',link:'See graphic design on Behance'}
+        {title:'Visual creation',type:'Graphic design & illustration',description:'Poster composition, image treatment, illustration and communication materials.',tools:['Figma','Affinity','Photoshop','Procreate','Canva'],url:'https://www.behance.net/ribestudio',link:'See graphic design on Behance'}
       ]},
       certs:{label:'Learning & education · records',items:[
         {title:'Software Engineering',type:'PUCPR · started in 2026',description:'Degree in progress, in Curitiba.',record:'PUCPR',recordSub:'ACADEMIC DEGREE',recordBottom:'In progress'},
