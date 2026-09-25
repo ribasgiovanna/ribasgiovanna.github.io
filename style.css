@@ -636,6 +636,15 @@ p:last-child { margin-bottom: 0; }
 .folders__set #gr-archive .gr-sheet-image img:hover { transform: scale(1.02); }
 @media (max-width: 540px) {
   .folders__set #gr-archive .gr-sheet-image img { height: 220px; }
+  /* on phones the reader was a fixed-height absolute box (stage 520px) and the
+     enlarged image + longer descriptions didn't fit: the sheet overflowed over
+     the top bar and under the pager ("View repository" on top of "Previous").
+     While reading, let the reader sit in flow and grow with its content; the
+     folders behind it are hidden so they don't poke out below a short sheet. */
+  .folders__set #gr-archive[data-reading="true"] .gr-stage { height: auto; }
+  .folders__set #gr-archive[data-reading="true"] .gr-folder { visibility: hidden; }
+  .folders__set #gr-archive .gr-reader { position: relative; inset: auto; margin: 12px 1% 8px; }
+  .folders__set #gr-archive .gr-sheet { justify-content: flex-start; }
 }
 
 /* ---------- COFFEE & CODE (dark) ---------- */
