@@ -31,6 +31,8 @@ documents with personal data, or anything that needs someone's permission.
   through `interact-5.webp` are the 4 extra Interact Club photos from the previous
   click-through-gallery version of that one card; kept, not referenced now that the
   section is a compact grid with one photo per entry.
+  `cert-maria-penha.webp` and `cert-hackathon.webp` are the OAB/PR certificates,
+  shown as a second thumbnail on those two event cards (via `data-images`).
 - `assets/images/playground/` — design, illustration, photography and food pieces,
   filtered by category on the page.
 

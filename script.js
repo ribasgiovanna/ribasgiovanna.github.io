@@ -318,7 +318,7 @@
       ci_mp_t1: "With Fabiane Pieruccini (Desembargadora, TJ/PR), Maryah Salgado and Marina Jonsson (lawyers) &mdash; hosted by the Advocacia Iniciante, Estudos sobre Viol&ecirc;ncia de G&ecirc;nero, Advocacia Criminal and Mulheres Advogadas committees.",
       ci_mf_org: "1st edition", ci_mf_period: "Sep 6, 2026",
       ci_mf_t1: "Experienced the maker culture firsthand &mdash; collaboration, trial-and-error, building in community &mdash; and helped Prof. F&aacute;bio Garcez Bettio at his maker-space exhibit.",
-      ci_hack_h: "Hackathon da Cidadania OAB/PR", ci_hack_org: "OAB Paran&aacute;", ci_hack_period: "Sep 12&ndash;13, 2026",
+      ci_hack_h: "Hackathon da Cidadania OAB/PR", ci_hack_org: "OAB Paran&aacute;", ci_hack_period: "Sep 11&ndash;13, 2026",
       ci_hack_t1: "Built AdversIA with a team, an assistant for family-law lawyers that reviews a case strategy as if it were the opposing side &mdash; surfacing contradictions, unproven claims and hard questions before they come up in a hearing.",
       ci_hack_t2: "Prototype scope: Direito de Fam&iacute;lia (divorce, asset division, alimony, custody), with an evidence plan and a hearing-simulation feature.",
 
@@ -658,7 +658,7 @@
       ci_mp_t1: "Com Fabiane Pieruccini (Desembargadora do TJ/PR), Maryah Salgado e Marina Jonsson (advogadas) &mdash; promovido pelas Comiss&otilde;es da Advocacia Iniciante, de Estudos sobre Viol&ecirc;ncia de G&ecirc;nero, de Advocacia Criminal e das Mulheres Advogadas.",
       ci_mf_org: "1&ordf; edi&ccedil;&atilde;o", ci_mf_period: "6 de set de 2026",
       ci_mf_t1: "Vivenciei a cultura maker ao vivo &mdash; colabora&ccedil;&atilde;o, tentativa e erro, construir em comunidade &mdash; e ajudei o professor F&aacute;bio Garcez Bettio na exposi&ccedil;&atilde;o do seu espa&ccedil;o maker.",
-      ci_hack_h: "Hackathon da Cidadania OAB/PR", ci_hack_org: "OAB Paran&aacute;", ci_hack_period: "12&ndash;13 de set de 2026",
+      ci_hack_h: "Hackathon da Cidadania OAB/PR", ci_hack_org: "OAB Paran&aacute;", ci_hack_period: "11&ndash;13 de set de 2026",
       ci_hack_t1: "Construí a AdversIA com uma equipe, um assistente para advogados de fam&iacute;lia que revisa a estrat&eacute;gia do caso como se fosse a parte contr&aacute;ria &mdash; mostrando contradi&ccedil;&otilde;es, alega&ccedil;&otilde;es sem prova e perguntas dif&iacute;ceis antes que apare&ccedil;am na audi&ecirc;ncia.",
       ci_hack_t2: "Escopo do prot&oacute;tipo: Direito de Fam&iacute;lia (div&oacute;rcio, partilha de bens, pens&atilde;o aliment&iacute;cia, guarda), com plano de provas e simula&ccedil;&atilde;o de audi&ecirc;ncia.",
 
@@ -1461,6 +1461,22 @@
     nextBtn.addEventListener("click", goNext);
     closeBtn.addEventListener("click", close);
     modal.addEventListener("click", function (e) { if (e.target === modal) close(); });
+
+    /* swipe left/right on the card pages through the group on touch screens;
+       vertical drags are left alone so the card can still scroll */
+    var touchX = null, touchY = 0;
+    box.addEventListener("touchstart", function (e) {
+      if (e.touches.length !== 1) { touchX = null; return; }
+      touchX = e.touches[0].clientX; touchY = e.touches[0].clientY;
+    }, { passive: true });
+    box.addEventListener("touchend", function (e) {
+      if (touchX === null) return;
+      var dx = e.changedTouches[0].clientX - touchX;
+      var dy = e.changedTouches[0].clientY - touchY;
+      touchX = null;
+      if (Math.abs(dx) < 50 || Math.abs(dx) < Math.abs(dy) * 1.5) return;
+      if (dx < 0) goNext(); else goPrev();
+    }, { passive: true });
   }
 
   /* ---------- hero name: typewriter reveal ---------- */

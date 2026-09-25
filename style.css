@@ -838,8 +838,13 @@ p:last-child { margin-bottom: 0; }
 /* ---------- COMMUNITY DETAIL MODAL ---------- */
 .cmodal { position: fixed; inset: 0; z-index: 60; display: grid; place-items: center; padding: 24px; background: color-mix(in srgb, var(--ink) 55%, transparent); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
 .cmodal[hidden] { display: none; }
+/* iOS Safari only fires click on elements it considers clickable — without
+   cursor:pointer a tap on the dimmed backdrop never reached the close handler */
+.cmodal, .modal { cursor: pointer; }
+.cmodal__box { cursor: auto; touch-action: pan-y; }
+.modal__box { cursor: auto; }
 .cmodal__box { position: relative; width: min(560px, 100%); max-height: 88vh; overflow: auto; background: var(--glass-bg-strong); backdrop-filter: var(--glass-blur); -webkit-backdrop-filter: var(--glass-blur); border: 1px solid var(--glass-edge); border-radius: var(--radius-card); box-shadow: var(--glass-shadow); animation: modal-in .35s var(--ease-spring); }
-.cmodal__close { position: absolute; top: 10px; right: 10px; z-index: 2; display: grid; place-items: center; width: 36px; height: 36px; background: var(--glass-bg); backdrop-filter: var(--glass-blur-sm); -webkit-backdrop-filter: var(--glass-blur-sm); border: 1px solid var(--glass-edge); border-radius: 50%; font-size: 20px; line-height: 1; cursor: pointer; color: var(--ink-2); transition: transform .18s var(--ease-spring), background .2s var(--ease-smooth); }
+.cmodal__close { position: sticky; top: 10px; margin: 10px 10px -46px auto; z-index: 2; display: grid; place-items: center; width: 36px; height: 36px; background: var(--glass-bg); backdrop-filter: var(--glass-blur-sm); -webkit-backdrop-filter: var(--glass-blur-sm); border: 1px solid var(--glass-edge); border-radius: 50%; font-size: 20px; line-height: 1; cursor: pointer; color: var(--ink-2); transition: transform .18s var(--ease-spring), background .2s var(--ease-smooth); }
 .cmodal__close:hover { background: color-mix(in srgb, var(--ink) 8%, var(--glass-bg)); }
 .cmodal__close:active { transform: scale(.88); }
 @media (prefers-reduced-motion: reduce) { .cmodal__close:active { transform: none; } }
@@ -868,6 +873,12 @@ p:last-child { margin-bottom: 0; }
   display: flex; align-items: center; justify-content: center; gap: 16px;
   padding: 4px 22px 22px;
 }
+/* .gallery__nav is hidden on phones (the gallery swipes instead), which also
+   hid the modal's arrows — keep them here, with a 44px touch target */
+@media (max-width: 640px) {
+  .cmodal__pager .gallery__nav { display: grid; width: 44px; height: 44px; }
+  .cmodal__close { width: 44px; height: 44px; font-size: 24px; margin-bottom: -54px; color: var(--ink); }
+}
 .cmodal__pageinfo { font: 500 12px/1 var(--mono); letter-spacing: .06em; color: var(--ink-3); min-width: 5ch; text-align: center; }
 .cmodal__body h3 { font-family: var(--serif); font-weight: 500; font-size: 1.3rem; margin: 0 0 .3em; }
 .cmodal__body p { max-width: none; }
@@ -894,7 +905,7 @@ p:last-child { margin-bottom: 0; }
 .modal__box { position: relative; width: min(680px, 100%); max-height: 92vh; overflow: auto; background: var(--glass-bg-strong); backdrop-filter: var(--glass-blur); -webkit-backdrop-filter: var(--glass-blur); border: 1px solid var(--glass-edge); border-radius: var(--radius-card); padding: 22px; box-shadow: var(--glass-shadow); animation: modal-in .35s var(--ease-spring); }
 @keyframes modal-in { from { opacity: 0; transform: scale(.94) translateY(10px); } to { opacity: 1; transform: none; } }
 @media (prefers-reduced-motion: reduce) { .modal__box, .cmodal__box { animation: none; } }
-.modal__close { position: absolute; top: 10px; right: 10px; display: grid; place-items: center; width: 36px; height: 36px; background: var(--glass-bg); backdrop-filter: var(--glass-blur-sm); -webkit-backdrop-filter: var(--glass-blur-sm); border: 1px solid var(--glass-edge); border-radius: 50%; font-size: 20px; line-height: 1; cursor: pointer; color: var(--ink-2); transition: transform .18s var(--ease-spring), background .2s var(--ease-smooth); }
+.modal__close { position: sticky; top: 0; z-index: 2; margin: -12px -12px -36px auto; display: grid; place-items: center; width: 36px; height: 36px; background: var(--glass-bg); backdrop-filter: var(--glass-blur-sm); -webkit-backdrop-filter: var(--glass-blur-sm); border: 1px solid var(--glass-edge); border-radius: 50%; font-size: 20px; line-height: 1; cursor: pointer; color: var(--ink-2); transition: transform .18s var(--ease-spring), background .2s var(--ease-smooth); }
 .modal__close:hover { background: color-mix(in srgb, var(--ink) 8%, var(--glass-bg)); }
 .modal__close:active { transform: scale(.88); }
 @media (prefers-reduced-motion: reduce) { .modal__close:active { transform: none; } }
