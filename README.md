@@ -1,5 +1,7 @@
 # ribasgiovanna.github.io
 
+English · [Português](README.pt-br.md)
+
 Personal portfolio of **Giovanna Ribas** — software engineering, data automation,
 creative technology, visual design and community work.
 
